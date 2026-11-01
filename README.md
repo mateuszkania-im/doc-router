@@ -4,6 +4,12 @@ A working proof of concept for the incoming-correspondence case study: a Polish 
 
 The design follows one idea: **this is not a classification problem, it is a deadline-management problem under uncertainty.** A seizure notice is effective the moment it is delivered and the bank has 7 days; a complaint left unanswered for 30 days is deemed accepted. So the system is built to never lose a critical letter, never attach a letter to the wrong customer, and automate only what it can automate with measured precision.
 
+> **Status: a preliminary proof of concept, a first bite at the problem.** It is built to answer one question before anyone commits budget: can incoming mail be classified, matched to the right customer and routed with measurable safety, and at what cost?
+>
+> - **What it already shows:** the whole path from a scan to a queue works end to end; a cascade of cheap local steps and an LLM only for the uncertain band matches an LLM-on-everything design on accuracy at a fifth of the cost and loses fewer critical letters; OCR mistakes in customer numbers do not attach letters to the wrong person; every decision is explainable and every failure ends with a person, not a lost letter.
+> - **What it does not show yet:** how it behaves on real letters. All numbers come from a synthetic corpus written by two LLMs and rendered scans, which is good for comparing designs but not a promise of production accuracy. There is no login on the console and no integration with real core systems.
+> - **Next step proposed:** 1500-3000 real, anonymised letters labelled by the teams that handle them, a blind test set, then 2-3 weeks of shadow mode next to today's process before any automation is switched on, class by class. Details in [From PoC to production](#from-poc-to-production).
+
 ```
 pnpm install
 pnpm start                 # http://127.0.0.1:3000  operator console + API
@@ -11,7 +17,7 @@ pnpm classify samples/02-wypowiedzenie-z-reklamacja.txt
 pnpm classify samples/08-odreczne-wypowiedzenie.jpg   # handwriting, OCR with a second read
 pnpm eval --llm-baseline   # 1511 held-out letters, cascade versus LLM only
 pnpm eval:scans            # 128 rendered scans, photos and handwritten letters, from pixels
-pnpm check                 # typecheck + lint + format + 139 tests
+pnpm check                 # typecheck + lint + format + 141 tests
 ```
 
 Without `OPENAI_API_KEY` everything still runs: the cascade uses the local model, and sends the uncertain band to people. With the key, the LLM handles the uncertain band and OCRs scans.
@@ -303,14 +309,14 @@ A second round closed the gaps listed in the earlier README (hybrid matching, se
 
 ## API
 
-| Method | Path                                       |                                                                                                                                                             |
-| ------ | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `POST` | `/documents`                               | multipart (`file`, `channel`, `receivedAt`) or JSON (`text` or `contentBase64`). Idempotent on content hash: the same letter twice returns the first result |
-| `GET`  | `/documents?status=NEEDS_REVIEW&queue=...` | work list, nearest deadline first                                                                                                                           |
-| `GET`  | `/documents/:id`                           | full decision: text, cascade trace, identifiers, enrichment with candidates, routing                                                                        |
-| `POST` | `/documents/:id/review`                    | human correction `{ reviewer, correctLabel, correctQueue, customerId?, note? }`                                                                             |
-| `GET`  | `/queues`, `/classes`, `/healthz`          |                                                                                                                                                             |
-| `GET`  | `/`                                        | operator console                                                                                                                                            |
+| Method | Path                                       |                                                                                                                                                                                                                                                                                                                         |
+| ------ | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `POST` | `/documents`                               | multipart (`file`, `channel`, `receivedAt`) or JSON (`text` or `contentBase64`). `receivedAt` moves deadlines, so it needs the integration token and must be past and at most 30 days old; otherwise the server's clock is the receipt time. Idempotent on content hash: the same letter twice returns the first result |
+| `GET`  | `/documents?status=NEEDS_REVIEW&queue=...` | work list, nearest deadline first                                                                                                                                                                                                                                                                                       |
+| `GET`  | `/documents/:id`                           | full decision: text, cascade trace, identifiers, enrichment with candidates, routing                                                                                                                                                                                                                                    |
+| `POST` | `/documents/:id/review`                    | human correction `{ reviewer, correctLabel, correctQueue, customerId?, note? }`                                                                                                                                                                                                                                         |
+| `GET`  | `/queues`, `/classes`, `/healthz`          |                                                                                                                                                                                                                                                                                                                         |
+| `GET`  | `/`                                        | operator console                                                                                                                                                                                                                                                                                                        |
 
 Every input is validated with Zod, and errors come back as `400` with field-level issues, `413` above the upload limit, and `415` for unsupported media types.
 

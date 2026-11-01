@@ -35,6 +35,35 @@ const QueueSchema = z
     { message: 'unknown queue' },
   );
 
+/**
+ * A client-supplied receipt time moves statutory deadlines, so it is accepted only from an
+ * authenticated integration and only inside a plausible window: never in the future (beyond clock
+ * skew), never older than the oldest letter an intake would still be delivering.
+ */
+const MAX_BACKDATE_MS = 30 * 24 * 60 * 60 * 1000;
+const CLOCK_SKEW_MS = 5 * 60 * 1000;
+
+export function receiptTime(
+  claimed: string | undefined,
+  authenticated: boolean,
+  now = new Date(),
+): Date {
+  if (claimed === undefined) return now;
+  if (!authenticated) {
+    throw new HTTPException(403, { message: 'receivedAt requires a valid X-Integration-Token' });
+  }
+  const at = new Date(claimed);
+  if (
+    at.getTime() > now.getTime() + CLOCK_SKEW_MS ||
+    at.getTime() < now.getTime() - MAX_BACKDATE_MS
+  ) {
+    throw new HTTPException(422, {
+      message: 'receivedAt must be in the past and at most 30 days old',
+    });
+  }
+  return at;
+}
+
 function tokenMatches(given: string | undefined, expected: string | undefined): boolean {
   if (!given || !expected) return false;
   const a = Buffer.from(given);
@@ -150,16 +179,16 @@ export function createApp(deps: AppDeps): Hono {
       throw new HTTPException(415, { message: `unsupported media type ${mimeType ?? 'unknown'}` });
     }
 
+    const authenticated = tokenMatches(c.req.header('x-integration-token'), deps.integrationToken);
     const claimsStructuredChannel =
       STRUCTURED_CHANNELS.has(input.channel) || input.declaredClass !== undefined;
-    if (
-      claimsStructuredChannel &&
-      !tokenMatches(c.req.header('x-integration-token'), deps.integrationToken)
-    ) {
+    if (claimsStructuredChannel && !authenticated) {
       throw new HTTPException(403, {
         message: 'structured channels and declaredClass require a valid X-Integration-Token',
       });
     }
+
+    const receivedAt = receiptTime(input.receivedAt, authenticated);
 
     const sha256 = createHash('sha256').update(content).digest('hex');
     const existing = deps.store.findIdByHash(sha256);
@@ -169,7 +198,7 @@ export function createApp(deps: AppDeps): Hono {
       {
         id: randomUUID(),
         channel: input.channel,
-        receivedAt: input.receivedAt ? new Date(input.receivedAt) : new Date(),
+        receivedAt,
         filename: input.filename,
         mimeType,
         content,

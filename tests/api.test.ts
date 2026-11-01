@@ -16,6 +16,7 @@ interface DocBody {
     label: string | null;
     queue: string;
     status: string;
+    receivedAt: string;
     deadline: string | null;
     result: { classification: { decidedBy: string } };
   };
@@ -52,11 +53,7 @@ describe('HTTP API', () => {
   });
 
   it('routes a pasted letter and returns 201 with a Location header', async () => {
-    const res = await ctx.post({
-      text: LETTERS.seizure,
-      channel: 'PAPER_SCAN',
-      receivedAt: '2026-10-30T09:00:00Z',
-    });
+    const res = await ctx.post({ text: LETTERS.seizure, channel: 'PAPER_SCAN' });
     expect(res.status).toBe(201);
     const body = (await res.json()) as DocBody;
     expect(res.headers.get('location')).toBe(`/documents/${body.document.id}`);
@@ -64,8 +61,9 @@ describe('HTTP API', () => {
       label: 'BAILIFF_SEIZURE',
       queue: 'enforcement',
       status: 'ROUTED',
-      deadline: '2026-11-06T09:00:00.000Z',
     });
+    const { receivedAt, deadline } = body.document;
+    expect(Date.parse(deadline ?? '') - Date.parse(receivedAt)).toBe(7 * 24 * 60 * 60 * 1000);
     expect(body.document.result.classification.decidedBy).toBe('rules');
   });
 
@@ -199,6 +197,31 @@ describe('HTTP API', () => {
       body: JSON.stringify({ text: LETTERS.invoice, channel: 'OGNIVO', declaredClass: 'INVOICE' }),
     });
     expect(res.status).toBe(403);
+  });
+
+  it('accepts a receipt time only from an authenticated integration, inside a plausible window', async () => {
+    const day = 24 * 60 * 60 * 1000;
+    const send = (receivedAt: string, token?: string) =>
+      ctx.app.request('/documents', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+          ...(token ? { 'x-integration-token': token } : {}),
+        },
+        body: JSON.stringify({ text: LETTERS.seizure, channel: 'PAPER_SCAN', receivedAt }),
+      });
+    const twoDaysAgo = new Date(Date.now() - 2 * day).toISOString();
+    expect((await send(twoDaysAgo)).status).toBe(403);
+    expect((await send(new Date(Date.now() + day).toISOString(), 'secret-token')).status).toBe(422);
+    expect((await send(new Date(Date.now() - 40 * day).toISOString(), 'secret-token')).status).toBe(
+      422,
+    );
+    const ok = await send(twoDaysAgo, 'secret-token');
+    expect(ok.status).toBe(201);
+    const body = (await ok.json()) as DocBody;
+    expect(body.document).toMatchObject({
+      deadline: new Date(Date.parse(twoDaysAgo) + 7 * day).toISOString(),
+    });
   });
 
   it('trusts the declared type from an authenticated OGNIVO integration', async () => {
