@@ -1,0 +1,374 @@
+[
+  {
+    "label": "BAILIFF_SEIZURE",
+    "briefs": [
+      "Dyrektor oddziału ZUS prowadzący egzekucję administracyjną zawiadamia Vistula Bank o zajęciu środków zgromadzonych na rachunku oszczędnościowo-rozliczeniowym należącym do {OSOBA}, PESEL {PESEL}, i zakazuje realizacji wypłat ponad kwotę wolną do czasu przekazania zajętej sumy organowi egzekucyjnemu.",
+      "Wojskowy organ egzekucyjny kieruje do Vistula Towarzystwo Ubezpieczeń S.A. zajęcie wierzytelności z tytułu odszkodowania z polisy komunikacyjnej {POLISA} należnego {OSOBA}; pismo obejmuje żądanie, by ewentualna wypłata z likwidowanej szkody {SZKODA} została przekazana organowi, a nie uprawnionemu.",
+      "Komornik skarbowy zawiadamia o zajęciu praw do wykupu i wszelkich świadczeń pieniężnych z umowy ubezpieczenia na życie {POLISA} przysługujących {OSOBA}, PESEL {PESEL}, wraz z wezwaniem do niewypłacania środków z tytułu rozwiązania umowy.",
+      "Naczelnik urzędu celno-skarbowego przesyła do banku zawiadomienie o zajęciu wierzytelności z lokaty terminowej prowadzonej dla {OSOBA} i poleca zablokowanie odnowienia lokaty oraz przekazanie należnych środków po jej zapadnięciu.",
+      "Komornik sądowy informuje Vistula TU, że zajmuje wierzytelność przysługującą agentowi ubezpieczeniowemu {OSOBA} z tytułu należnej prowizji, wzywając spółkę jako trzeciodłużnika do składania przyszłych wypłat wyłącznie na potrzeby egzekucji pod sygnaturą {SYGN_KM}.",
+      "Organ egzekucyjny gminy zawiadamia o zajęciu wierzytelności z tytułu zwrotu niewykorzystanej składki za polisę majątkową {POLISA} należnej {OSOBA}, wskazując, że ewentualny zwrot po rozwiązaniu umowy ma nie trafić do klienta.",
+      "Komornik przy sądzie rejonowym przesyła zajęcie wierzytelności z tytułu dopłaty z ubezpieczenia AC po kosztorysowym rozliczeniu szkody {SZKODA}; w piśmie wskazuje, że każda przyszła dopłata należna {OSOBA} ma zostać zatrzymana i przekazana komornikowi.",
+      "Dyrektor izby administracji skarbowej jako wierzyciel egzekwujący należności publicznoprawne kieruje do Vistula Bank zajęcie wierzytelności z rachunku wspólnego prowadzonego m.in. dla {OSOBA}, żądając informacji o stanie środków przypadających dłużnikowi.",
+      "Komornik dokonuje zajęcia wierzytelności o wypłatę świadczenia z umowy grupowego ubezpieczenia na życie, gdzie Vistula TU jest ubezpieczycielem, a {OSOBA} występuje jako uprawniony do otrzymania pieniędzy po śmierci ubezpieczonego; spółka ma wstrzymać wypłatę i odpowiedzieć, czy świadczenie jest wymagalne.",
+      "Urząd skarbowy zawiadamia o zajęciu nadpłaty powstałej na rachunku kredytowym prowadzonym przez Vistula Bank dla {OSOBA}, traktując ją jako wierzytelność podlegającą przekazaniu organowi egzekucyjnemu.",
+      "Komornik przesyła do Vistula TU pismo o zajęciu wierzytelności przyszłej, jaka może powstać z tytułu zwrotu składki lub wypłaty świadczenia z dowolnych czynnych umów zawartych przez {OSOBA}, PESEL {PESEL}, i żąda ujawnienia, czy spółka jest dłużnikiem zajętej wierzytelności.",
+      "Prezes ZUS jako organ egzekucyjny kieruje do banku zawiadomienie obejmujące zajęcie rachunku firmowego jednoosobowej działalności należącej do {OSOBA}, z zastrzeżeniem, że zakaz wypłat dotyczy także przyszłych wpływów do wysokości egzekwowanej należności.",
+      "Komornik sądowy zawiadamia Vistula TU o zajęciu roszczenia regresowego przysługującego {OSOBA} wobec zakładu ubezpieczeń po wcześniejszej wypłacie odszkodowania, nakazując nie spełniać świadczenia do rąk dłużnika, jeśli roszczenie zostanie uznane.",
+      "Administracyjny organ egzekucyjny miasta przesyła zajęcie wierzytelności z tytułu wypłaty wartości odstąpienia od umowy ubezpieczenia z funduszem kapitałowym {POLISA} należnej {OSOBA}, wraz z obowiązkiem udzielenia odpowiedzi o przeszkodach w realizacji zajęcia."
+    ],
+    "hardCases": [
+      "Pismo zatytułowane „Reklamacja dotycząca błędnej wypłaty świadczenia” w treści okazuje się zawiadomieniem komornika, że wszelkie kwoty należne {OSOBA} z polisy {POLISA} zostały zajęte pod sygnaturą {SYGN_KM} i nie mogą być przekazane klientowi.",
+      "Wniosek opisany jako „dyspozycja zmiany rachunku do wypłaty odszkodowania” zawiera w rzeczywistości żądanie naczelnika urzędu skarbowego, aby świadczenie z likwidacji szkody {SZKODA} należne {OSOBA}, PESEL {PESEL}, przekazać w ramach zajęcia wierzytelności organowi egzekucyjnemu."
+    ]
+  },
+  {
+    "label": "BAILIFF_INQUIRY",
+    "briefs": [
+      "Komornik Sądowy przy Sądzie Rejonowym zwraca się o wskazanie, czy {OSOBA}, PESEL {PESEL}, figuruje w Vistula Bank jako posiadacz rachunku oszczędnościowo-rozliczeniowego, lokaty lub karty kredytowej, oraz czy w Vistula TU zawarł polisę komunikacyjną OC/AC; pismo wyraźnie dotyczy wyłącznie udzielenia informacji w sprawie {SYGN_KM}, bez dokonywania zajęcia.",
+      "Asesor komorniczy działający z upoważnienia komornika wnosi o podanie, czy na rzecz {OSOBA} zarejestrowano w Państwa towarzystwie szkodę lub wypłatę odszkodowania z polisy mieszkaniowej albo turystycznej, wraz z informacją o ewentualnym terminie świadczenia; sygnatura sprawy {SYGN_KM}.",
+      "Kancelaria Komornicza prosi o odpowiedź, czy {OSOBA} (PESEL {PESEL}) jest uprawniony z umowy ubezpieczenia na życie, ubezpieczenia grupowego lub polisy NNW, a jeśli tak, czy przysługują mu obecnie jakiekolwiek roszczenia pieniężne; zapytanie w trybie art. 761 k.p.c., sygn. {SYGN_KM}.",
+      "Komornik kieruje zapytanie, czy {OSOBA} pozostaje współposiadaczem jakiegokolwiek rachunku prowadzonego przez Vistula Bank, w tym rachunku wspólnego z inną osobą, oraz czy ustanowiono do niego pełnomocnictwa; odpowiedź ma dotyczyć sprawy egzekucyjnej {SYGN_KM} i nie obejmuje zajęcia wierzytelności.",
+      "W związku z prowadzonym postępowaniem egzekucyjnym komornik prosi o ustalenie, czy {OSOBA}, PESEL {PESEL}, posiada aktywną polisę firmową lub majątkową, z której może wynikać zwrot składki, niewypłacone odszkodowanie albo inne należności od Vistula TU; sygnatura {SYGN_KM}.",
+      "Komornik sądowy zwraca się o wskazanie, czy {OSOBA} korzystał w Vistula Bank z produktu kredytowego lub pożyczkowego, a jeśli tak, czy na jego rzecz przysługuje jakakolwiek nadpłata, zwrot prowizji lub inna wierzytelność wobec banku; pismo informacyjne w sprawie {SYGN_KM}.",
+      "Zastępca komornika prosi o informację, czy {OSOBA} jest ujawniony jako właściciel, współwłaściciel albo użytkownik pojazdu objętego polisą komunikacyjną zawartą w Vistula TU, oraz czy z tej umowy wynika należny zwrot niewykorzystanej składki; sygn. {SYGN_KM}.",
+      "Kancelaria komornicza wzywa do podania, czy {OSOBA}, PESEL {PESEL}, posiadał w ciągu ostatnich 12 miesięcy rachunek zamknięty w Vistula Bank lub lokatę już rozliczoną, jeżeli według Państwa ewidencji pozostają po tej relacji jakiekolwiek środki do wypłaty; sprawa {SYGN_KM}.",
+      "Komornik prosi o przekazanie informacji, czy {OSOBA} został wskazany jako uposażony lub beneficjent świadczenia w polisie na życie obsługiwanej przez Vistula TU, o ile dane takie są dostępne w Państwa systemach, oraz czy powstała wymagalna należność; sygnatura {SYGN_KM}.",
+      "W piśmie skierowanym do centrali spółki komornik żąda odpowiedzi, czy na dane {OSOBA} z PESEL {PESEL} widnieją w Vistula Bank jakiekolwiek produkty depozytowe prowadzone dla działalności gospodarczej albo rachunki pomocnicze, wraz z informacją o samym fakcie ich istnienia; sygn. {SYGN_KM}.",
+      "Komornik Sądowy wnosi o sprawdzenie, czy {OSOBA} zgłaszał w Vistula TU roszczenie z tytułu szkody osobowej lub majątkowej i czy postępowanie likwidacyjne zakończyło się przyznaniem kwoty do wypłaty, nawet jeśli nie została jeszcze przelana; sprawa {SYGN_KM}, bez zajęcia świadczenia.",
+      "Asesor w kancelarii komorniczej pyta, czy {OSOBA} zawarł za pośrednictwem Vistula Bank ubezpieczenie do kredytu, przedłużoną gwarancję lub inny produkt powiązany, z którego może wynikać zwrot składki albo należne świadczenie; odpowiedź ma służyć wyłącznie ustaleniu majątku w sprawie {SYGN_KM}.",
+      "Komornik kieruje krótkie wezwanie o potwierdzenie, czy {OSOBA} jest klientem któregokolwiek z segmentów grupy Vistula, w szczególności jako posiadacz rachunku, lokaty, polisy inwestycyjnej lub odbiorca odszkodowania, oraz o wskazanie rodzaju relacji bez przesyłania środków; sygn. {SYGN_KM}.",
+      "Po bezskutecznym ustaleniu majątku dłużnika w innych instytucjach komornik występuje do Vistula TU i Vistula Bank z prośbą o informację, czy {OSOBA}, PESEL {PESEL}, ma u Państwa niewypłaconą prowizję agencyjną, zwrot składki, saldo dodatnie albo inne świadczenie pieniężne; sprawa egzekucyjna {SYGN_KM}.",
+      "Nagłówek pisma zawiera sformułowanie „zawiadomienie o zajęciu”, ale w treści komornik wyłącznie prosi o ustalenie, czy {OSOBA} posiada w Vistula Bank rachunek lub w Vistula TU polisę z należnym świadczeniem, i oczekuje informacji zwrotnej w sprawie {SYGN_KM} bez blokowania środków.",
+      "Komornik powołuje się na „wierzytelność z tytułu odszkodowania”, co może sugerować egzekucję ze świadczenia, jednak treść pisma ogranicza się do pytania, czy {OSOBA}, PESEL {PESEL}, ma jakiekolwiek aktywne lub wygasłe produkty w Vistula TU albo Vistula Bank oraz czy istnieją wobec niego należności; sygn. {SYGN_KM}."
+    ],
+    "hardCases": [
+      "Nagłówek pisma zawiera sformułowanie „zawiadomienie o zajęciu”, ale w treści komornik wyłącznie prosi o ustalenie, czy {OSOBA} posiada w Vistula Bank rachunek lub w Vistula TU polisę z należnym świadczeniem, i oczekuje informacji zwrotnej w sprawie {SYGN_KM} bez blokowania środków.",
+      "Komornik powołuje się na „wierzytelność z tytułu odszkodowania”, co może sugerować egzekucję ze świadczenia, jednak treść pisma ogranicza się do pytania, czy {OSOBA}, PESEL {PESEL}, ma jakiekolwiek aktywne lub wygasłe produkty w Vistula TU albo Vistula Bank oraz czy istnieją wobec niego należności; sygn. {SYGN_KM}."
+    ]
+  },
+  {
+    "label": "COURT_LETTER",
+    "briefs": [
+      "Sąd Rejonowy, I Wydział Cywilny, doręcza Vistula Towarzystwo Ubezpieczeń S.A. odpis wniosku o zawezwanie do próby ugodowej wniesionego przez {OSOBA} w sprawie roszczenia z polisy mieszkaniowej {POLISA}, sygnatura {SYGN_SAD}, oraz zawiadamia o terminie posiedzenia pojednawczego.",
+      "Sąd Okręgowy przesyła wyrok zaoczny przeciwko Vistula Bank w sprawie o zwrot środków z rachunku {IBAN}, sygnatura {SYGN_SAD}, wraz z pouczeniem o terminie i sposobie wniesienia sprzeciwu.",
+      "Sąd Rejonowy, wydział pracy i ubezpieczeń społecznych, kieruje do spółki wezwanie do przedstawienia dokumentacji dotyczącej grupowego ubezpieczenia na życie {POLISA} w sprawie z odwołania {OSOBA}, sygnatura {SYGN_SAD}.",
+      "Sąd Okręgowy zawiadamia o dopuszczeniu dowodu z opinii biegłego w sprawie o odszkodowanie po pożarze nieruchomości objętej polisą {POLISA}, sygnatura {SYGN_SAD}, i zobowiązuje firmę do uiszczenia zaliczki na poczet opinii.",
+      "Sąd Rejonowy przesyła postanowienie o umorzeniu postępowania w sprawie przeciwko Vistula Towarzystwo Ubezpieczeń S.A., wszczętej przez {OSOBA} w związku z odmową wypłaty świadczenia z polisy na życie {POLISA}, sygnatura {SYGN_SAD}.",
+      "Sąd Okręgowy doręcza apelację wniesioną przez {OSOBA} od wyroku oddalającego powództwo przeciwko ubezpieczycielowi w sprawie szkody komunikacyjnej {SZKODA}, sygnatura {SYGN_SAD}, wzywając do złożenia odpowiedzi na apelację.",
+      "Sąd Rejonowy, II Wydział Karny, przesyła zawiadomienie o terminie rozprawy, na której przedstawiciel Vistula Bank ma wystąpić w charakterze pokrzywdzonego w sprawie dotyczącej nieuprawnionych transakcji na rachunku {IBAN}, sygnatura {SYGN_SAD}.",
+      "Sąd Okręgowy kieruje do spółki odpis postanowienia o dopuszczeniu organizacji konsumenckiej do udziału w sprawie przeciwko Vistula Bank o ustalenie nieważności opłat związanych z rachunkiem {IBAN}, sygnatura {SYGN_SAD}.",
+      "Sąd Rejonowy zawiadamia o przekazaniu sprawy według właściwości do innego sądu w postępowaniu z powództwa {OSOBA} dotyczącego wypłaty z autocasco z polisy {POLISA}, sygnatura {SYGN_SAD}.",
+      "Sąd Okręgowy doręcza zarządzenie o zobowiązaniu Vistula Towarzystwo Ubezpieczeń S.A. do wskazania, czy uznaje roszczenie {OSOBA} co do zasady i wysokości w sprawie z polisy turystycznej {POLISA}, sygnatura {SYGN_SAD}.",
+      "Sąd Rejonowy przesyła odpis skargi na orzeczenie referendarza sądowego w sprawie kosztów procesu po zakończeniu sporu o zalanie lokalu objętego polisą majątkową {POLISA}, sygnatura {SYGN_SAD}.",
+      "Sąd Okręgowy zawiadamia pełnomocnika spółki o zamknięciu rozprawy i odroczeniu ogłoszenia wyroku w sprawie o zadośćuczynienie po wypadku komunikacyjnym, sygnatura {SYGN_SAD}.",
+      "Sąd Rejonowy doręcza postanowienie o wezwaniu Vistula Towarzystwo Ubezpieczeń S.A. do udziału w sprawie w charakterze interwenienta ubocznego po stronie pozwanego, w związku z polisą OC {POLISA}, sygnatura {SYGN_SAD}.",
+      "Sąd Okręgowy przesyła wezwanie do osobistego stawiennictwa członka zarządu Vistula Bank na przesłuchanie strony w sprawie o nienależyte wykonanie dyspozycji dotyczącej rachunku {IBAN}, sygnatura {SYGN_SAD}.",
+      "Sąd Rejonowy przesyła „wezwanie do zapłaty” kosztów zaliczki na biegłego w sprawie dotyczącej reklamacji ubezpieczenia mieszkania, ale pismo pochodzi z sądu, zawiera sygnaturę {SYGN_SAD} i stanowi formalne zarządzenie procesowe.",
+      "Sąd Okręgowy doręcza „reklamację klienta” załączoną do akt jako pozew zbiorowy przeciwko Vistula Bank, z wezwaniem do ustosunkowania się w terminie procesowym i oznaczeniem sygnatury {SYGN_SAD}."
+    ],
+    "hardCases": [
+      "Sąd Rejonowy przesyła pismo zatytułowane „ostateczne przedsądowe wezwanie”, jednak w treści wskazuje, że jest to nakaz zapłaty wydany przez sąd w postępowaniu upominawczym, z sygnaturą {SYGN_SAD} i pouczeniem o sprzeciwie.",
+      "Do Vistula Towarzystwo Ubezpieczeń S.A. wpływa dokument nazwany „odpowiedź na reklamację”, lecz nadawcą jest sąd i pismo zawiera zawiadomienie o terminie posiedzenia oraz odpis pozwu {OSOBA} w sprawie o polisę {POLISA}, sygnatura {SYGN_SAD}."
+    ]
+  },
+  {
+    "label": "COMPLAINT",
+    "briefs": [
+      "{OSOBA} składa reklamację dotyczącą nieuzasadnionego podwyższenia składki przy wznowieniu polisy {POLISA}; wskazuje, że nie zaszły żadne zmiany ryzyka i domaga się korekty oraz zwrotu nadpłaty.",
+      "Klientka opisuje, że po zgłoszeniu szkody domowej {SZKODA} wypłacono środki na nieaktualny rachunek mimo wcześniejszej dyspozycji zmiany; żąda pilnego wyjaśnienia błędu i prawidłowej realizacji wypłaty na {IBAN}.",
+      "{OSOBA} reklamuje zamknięcie rachunku w Vistula Bank bez uprzedniego powiadomienia, przez co odrzucono ważny przelew; domaga się przywrócenia dostępu, usunięcia negatywnych konsekwencji i pisemnych wyjaśnień.",
+      "Klient wnosi zastrzeżenia do naliczenia opłaty za wcześniejszą spłatę kredytu w Vistula Bank, twierdząc, że według warunków umowy prowizja nie powinna zostać pobrana; żąda zwrotu kwoty i ponownego rozliczenia.",
+      "{OSOBA} skarży się, że mimo terminowego opłacenia raty polisy {POLISA} otrzymał wezwanie do zapłaty z odsetkami; załącza potwierdzenie przelewu i domaga się skorygowania salda.",
+      "Klientka reklamuje błędne dane adresowe na dokumencie ubezpieczenia {POLISA}, mimo że zmiana została zgłoszona wcześniej, a korespondencja trafiała pod zły {ADRES}; żąda poprawienia danych i wyjaśnienia zaniedbania.",
+      "{OSOBA} zgłasza reklamację na odmowę uruchomienia assistance z polisy {POLISA}, wskazując że konsultant błędnie poinformował go o braku zakresu ochrony; domaga się zwrotu kosztów samodzielnie zorganizowanej pomocy.",
+      "Spadkobierca klienta składa reklamację, ponieważ w sprawie polisy na życie {POLISA} firma od miesięcy żąda tych samych dokumentów i nie kończy postępowania; wnosi o niezwłoczne rozpatrzenie oraz wskazanie przyczyn przewlekłości.",
+      "Klient Vistula Bank zgłasza, że bankomat nie wydał gotówki, ale rachunek został obciążony; domaga się uznania reklamacji transakcji i zwrotu środków na rachunek {IBAN}.",
+      "{OSOBA} podnosi, że po cesji polisy mieszkaniowej {POLISA} na bank nadal otrzymuje monity jak do właściciela poprzednich praw, co powoduje chaos i ryzyko podwójnych dyspozycji; żąda uporządkowania danych i potwierdzenia aktualnego statusu.",
+      "Klientka reklamuje automatyczne odnowienie polisy {POLISA}, twierdząc że wcześniej złożyła sprzeciw, a mimo to pobrano składkę; domaga się anulowania wznowienia i zwrotu pobranej kwoty.",
+      "{OSOBA} składa zastrzeżenia do sposobu rozliczenia wykupu polisy na życie {POLISA}, ponieważ otrzymana kwota jest niższa niż wynikało z przekazywanych informacji; żąda szczegółowego zestawienia oraz dopłaty brakującej sumy.",
+      "Przedsiębiorca reklamuje blokadę dostępu do bankowości elektronicznej firmowego rachunku po aktualizacji systemu, wskazując że infolinia odsyła go bez rozwiązania problemu; żąda niezwłocznego przywrócenia dostępu i rekompensaty za utrudnienia.",
+      "{OSOBA} wnosi reklamację, ponieważ po zgłoszeniu rezygnacji z dodatkowej usługi przy rachunku bankowym nadal naliczane są miesięczne opłaty; domaga się zaprzestania obciążeń oraz zwrotu pobranych kwot od {DATA}."
+    ],
+    "hardCases": [
+      "W piśmie zatytułowanym „Wezwanie do zapłaty” {OSOBA} w rzeczywistości kwestionuje naliczenie zaległej składki do polisy {POLISA}, twierdząc że umowa została wcześniej rozwiązana, a obciążenie jest bezpodstawne; żąda korekty i anulowania roszczenia.",
+      "Klient przesyła „odwołanie” od pisma windykacyjnego dotyczącego rachunku w Vistula Bank, ale z treści jednoznacznie wynika reklamacja nieautoryzowanej opłaty, której wcześniej nie wyjaśniono; domaga się zwrotu środków na {IBAN} i zbadania sprawy."
+    ]
+  },
+  {
+    "label": "REGULATOR_LETTER",
+    "briefs": [
+      "Biuro Rzecznika Finansowego przekazuje do Vistula Towarzystwo Ubezpieczeń S.A. wystąpienie klienta {OSOBA} dotyczące sposobu ustalenia wysokości odszkodowania po szkodzie komunikacyjnej {SZKODA} i wnosi o przedstawienie akt sprawy oraz szczegółowego uzasadnienia zastosowanych potrąceń. Odpowiedź ma obejmować także informację, czy klientowi przekazano pełne pouczenie o trybie odwoławczym.",
+      "Komisja Nadzoru Finansowego żąda wyjaśnień w związku z sygnałami o opóźnieniach w przekazywaniu informacji o ryzyku przy oferowaniu produktu inwestycyjno-ubezpieczeniowego powiązanego z polisą {POLISA}. Pismo obejmuje prośbę o opis procedury sprzedażowej, materiały szkoleniowe i wzór ankiety badania potrzeb klienta.",
+      "Urząd Ochrony Konkurencji i Konsumentów zwraca się o przekazanie danych dotyczących zasad automatycznego przedłużania ubezpieczeń mieszkaniowych oraz treści komunikatów wysyłanych do konsumentów przed końcem ochrony. Sprawa została wszczęta po analizie skarg, w tym zgłoszenia dotyczącego umowy {POLISA} zawartej przez {OSOBA}.",
+      "Rzecznik Finansowy prosi o stanowisko w sprawie zarzutów {OSOBA} odnoszących się do pobrania opłaty likwidacyjnej przy wcześniejszym zakończeniu umowy na życie {POLISA}. W piśmie wskazano konieczność odniesienia się do podstawy prawnej i przedstawienia historii rozliczeń klienta.",
+      "KNF kieruje do Vistula Bank wezwanie do udzielenia informacji o sposobie obsługi reklamacji związanej z nieautoryzowanymi transakcjami na rachunku {IBAN}, zgłoszonej przez {OSOBA}. Organ oczekuje harmonogramu działań banku, treści odpowiedzi reklamacyjnych oraz wskazania, czy zastosowano ustawowe terminy.",
+      "UOKiK w ramach postępowania wyjaśniającego żąda przedstawienia wzorów informacji kierowanych do klientów przy sprzedaży ubezpieczenia turystycznego jako produktu dodatkowego do rachunku bankowego. Pismo odwołuje się do przypadku {OSOBA}, który twierdzi, że nie otrzymał jasnej informacji o zakresie wyłączeń odpowiedzialności w polisie {POLISA}.",
+      "Rzecznik Finansowy przekazuje wniosek interwencyjny {OSOBA} dotyczący odmowy zwrotu niewykorzystanej składki po wcześniejszej spłacie kredytu zabezpieczonego ubezpieczeniem. Spółka ma wyjaśnić, czy i w jaki sposób rozliczono ochronę wynikającą z polisy {POLISA} oraz jakie informacje przekazano klientowi po zamknięciu produktu bankowego.",
+      "Urząd KNF prosi o pilne stanowisko w sprawie procesu badania adekwatności przy oferowaniu klientom senioralnym ubezpieczenia na życie z elementem inwestycyjnym. W piśmie wskazano indywidualny przypadek {OSOBA} i zażądano nagrań rozmów sprzedażowych, o ile zostały utrwalone, oraz kopii dokumentów przekazanych przed zawarciem umowy {POLISA}.",
+      "Prezes UOKiK żąda informacji, czy w korespondencji windykacyjnej dotyczącej zaległych opłat za polisę {POLISA} stosowano sformułowania mogące wywoływać u konsumenta wrażenie obowiązku natychmiastowej zapłaty mimo sporu co do zasadności należności. Pismo nawiązuje do zawiadomienia złożonego przez {OSOBA} i obejmuje wniosek o przekazanie pełnych wzorów monitów.",
+      "Rzecznik Finansowy zwraca się o wyjaśnienie przyczyn wielokrotnego żądania tych samych dokumentów od {OSOBA} w toku likwidacji szkody majątkowej {SZKODA}. Wystąpienie zawiera prośbę o wskazanie, na jakim etapie postępowania znajdowała się sprawa oraz czy zakład informował klienta o przewidywanym terminie zakończenia postępowania.",
+      "KNF prowadząc czynności nadzorcze prosi o informację, jak Vistula Bank weryfikuje zgodę klienta na objęcie ochroną ubezpieczeniową do karty płatniczej. W tle wskazano skargę {OSOBA}, który utrzymuje, że polisa {POLISA} została aktywowana bez należytego potwierdzenia warunków.",
+      "UOKiK występuje o przedstawienie zasad naliczania opłat i prowizji przy rachunkach oszczędnościowych oferowanych z pakietem assistance oraz materiałów reklamowych sugerujących bezpłatność usługi. Organ powołuje się na skargi konsumentów, w tym zgłoszenie {OSOBA}, i oczekuje także wzorca regulaminu powiązanego z ochroną ubezpieczeniową.",
+      "Biuro Rzecznika Finansowego przekazuje prośbę o zajęcie stanowiska w sprawie odmowy uznania cesji praw z polisy mieszkaniowej {POLISA} po szkodzie {SZKODA}. {OSOBA} zarzuca spółce niejednolite informacje udzielane przez infolinię i oddział, a Rzecznik wnosi o odniesienie się do tej rozbieżności.",
+      "KNF zwraca się o wyjaśnienia dotyczące zasad monitorowania jakości obsługi posprzedażowej przy grupowych ubezpieczeniach dołączanych do produktów kredytowych. W piśmie przywołano sprawę {OSOBA}, który twierdzi, że nie otrzymał warunków ochrony ani informacji o możliwości rezygnacji z polisy {POLISA}."
+    ],
+    "hardCases": [
+      "Rzecznik Finansowy przesyła do spółki kopię wezwania przedsądowego złożonego przez pełnomocnika {OSOBA}, ale wyraźnie wskazuje, że pismo stanowi element postępowania interwencyjnego i wymaga przedstawienia stanowiska zakładu co do polisy {POLISA}. Mimo odniesień do możliwego pozwu chodzi o odpowiedź dla organu, a nie o obsługę sporu sądowego.",
+      "Prezes UOKiK prosi o przekazanie wzorów zawiadomień o zaległościach i informacji o kierowaniu spraw do egzekucji, jednak pismo dotyczy oceny praktyk wobec konsumentów, a nie konkretnej windykacji pod sygnaturą {SYGN_KM}. W tle znajduje się skarga {OSOBA} związana z polisą {POLISA}, a organ żąda stanowiska i dokumentów w toku postępowania wyjaśniającego."
+    ]
+  },
+  {
+    "label": "LAW_ENFORCEMENT_REQUEST",
+    "briefs": [
+      "Centralne Biuro Zwalczania Cyberprzestępczości zwraca się o przekazanie historii logowań, dyspozycji oraz danych kontaktowych przypisanych do rachunku {IBAN}, używanego przez {OSOBA}, w postępowaniu dotyczącym phishingu. Pismo wskazuje obowiązek zachowania poufności czynności i termin odpowiedzi do {DATA}.",
+      "Straż Graniczna, prowadząc czynności w sprawie finansowania nielegalnego przewozu osób przez granicę, żąda informacji o umowie ubezpieczenia assistance i płatnościach składek dokonanych przez {OSOBA} (PESEL {PESEL}). Organ wnosi także o wskazanie, czy z polisy {POLISA} korzystano poza terytorium Polski.",
+      "Agencja Bezpieczeństwa Wewnętrznego występuje o udostępnienie danych identyfikacyjnych, pełnomocnictw i historii operacji dotyczących relacji bankowej {OSOBA}, w związku z postępowaniem przygotowawczym o charakterze terrorystycznym. W piśmie żąda się, by nie informować klienta o zakresie przekazanych danych.",
+      "Żandarmeria Wojskowa żąda wydania kopii zgłoszenia szkody komunikacyjnej {SZKODA}, fotografii pojazdu oraz korespondencji z ubezpieczonym {OSOBA}, ponieważ materiały mogą stanowić dowód w sprawie posługiwania się podrobionymi dokumentami. Wniosek obejmuje także ustalenie, kto zgłaszał szkodę i z jakiego numeru telefonu.",
+      "Delegatura Centralnego Biura Antykorupcyjnego prosi o przekazanie informacji, czy {OSOBA} posiadał lokaty, rachunki oszczędnościowe lub ubezpieczenie na życie z elementem inwestycyjnym, oraz o wskazanie dat zawarcia i wartości wpłat. Żądanie pozostaje w związku z analizą majątkową prowadzoną w śledztwie korupcyjnym.",
+      "Urząd Celno-Skarbowy prowadzący dochodzenie karne skarbowe wzywa do nadesłania dokumentów dotyczących wypłaty odszkodowania z polisy majątkowej {POLISA}, w tym podstawy ustalenia wysokości świadczenia i danych odbiorcy przelewu. Organ wskazuje, że informacje są potrzebne do weryfikacji podejrzenia pozornego pożaru działalności gospodarczej.",
+      "Wydział Dochodzeniowo-Śledczy Komendy Wojewódzkiej Policji wnosi o zabezpieczenie i przekazanie nagrań rozmów z infolinii, dyspozycji telefonicznych oraz zmian danych autoryzacyjnych dokonanych przez {OSOBA} na rachunku {IBAN}. Sprawa dotyczy przejęcia tożsamości i nieuprawnionego zaciągnięcia produktu kredytowego.",
+      "Prokuratura Regionalna żąda udostępnienia pełnej dokumentacji ubezpieczenia na życie {POLISA}, w tym ankiety medycznej, dyspozycji uposażonych oraz informacji o próbach cesji praw z umowy. Materiały mają zostać wykorzystane w śledztwie dotyczącym zabójstwa dla korzyści majątkowej.",
+      "Komenda Stołeczna Policji, wydział zajmujący się przestępczością samochodową, zwraca się o wskazanie, czy pojazd objęty polisą autocasco {POLISA} był wcześniej zgłaszany do oględzin, oraz o przekazanie zdjęć, wyceny i danych osoby składającej wniosek. Czynności są prowadzone w sprawie legalizacji pojazdu pochodzącego z kradzieży.",
+      "Sądowy wydział karny, działając na potrzeby toczącego się postępowania i na wniosek prokuratora, wzywa Vistula Towarzystwo Ubezpieczeń S.A. do wydania informacji o rachunku technicznym obsługującym spłatę składek przez {OSOBA}. Pismo obejmuje również żądanie wskazania rachunku źródłowego, z którego wpływały środki, jeżeli jest znany bankowi.",
+      "Inspektorat Wewnętrzny Służby Więziennej występuje o potwierdzenie, czy osadzony {OSOBA} posiada polisę na życie lub rachunek oszczędnościowy w Vistula Bank, oraz o przekazanie danych dotyczących ostatnich dyspozycji. Organ uzasadnia wniosek podejrzeniem ukrywania majątku pochodzącego z przestępstwa.",
+      "Prokuratura Rejonowa w innym okręgu niż miejsce zamieszkania klienta żąda informacji o wszelkich produktach finansowych i ubezpieczeniowych prowadzonych dla {OSOBA} pod adresem {ADRES}, ponieważ ustalono posługiwanie się danymi podstawionej osoby. W szczególności oczekuje kopii wniosków, wzorów podpisów i dokumentów użytych przy zawarciu umów.",
+      "Policja kryminalna prosi o niezwłoczne zablokowanie możliwości zdalnej wypłaty środków z rachunku {IBAN} oraz o przekazanie danych o beneficjentach przelewów z ostatnich dni, wskazując na trwające oszustwo metodą „na pracownika banku”. Jednocześnie żąda przesłania potwierdzeń transakcji i adresów IP użytych do autoryzacji.",
+      "Wojskowa Prokuratura Garnizonowa żąda dokumentów dotyczących grupowego ubezpieczenia następstw nieszczęśliwych wypadków, do którego przystąpił {OSOBA}, wraz z informacją o zgłoszonych roszczeniach i wypłatach. Materiał ma służyć ustaleniu, czy uraz zgłoszony do ubezpieczyciela nie został upozorowany."
+    ],
+    "hardCases": [
+      "Komornik sądowy przy Sądzie Rejonowym, powołując się w treści na zajęcie wierzytelności, załącza jednak postanowienie prokuratora i żąda wydania historii rachunku {IBAN} oraz danych właściciela na potrzeby śledztwa o pranie pieniędzy. Mimo słownictwa egzekucyjnego zasadniczą treścią pisma jest żądanie organu ścigania o udostępnienie informacji.",
+      "Pełnomocnik pokrzywdzonego składa „reklamację” na brak zwrotu środków, lecz w załączeniu przekazuje wezwanie z Komendy Wojewódzkiej Policji nakazujące Vistula Bank przekazać dokumenty dotyczące przelewów z rachunku {IBAN} i identyfikacji {OSOBA}. O istocie sprawy przesądza żądanie policji w ramach postępowania karnego, a nie cywilna narracja pisma."
+    ]
+  },
+  {
+    "label": "GDPR_REQUEST",
+    "briefs": [
+      "{OSOBA} wnosi o sprostowanie swoich danych osobowych, ponieważ w systemie Vistula Bank przy rachunku powiązanym z {IBAN} widnieje nieaktualny adres korespondencyjny {ADRES} oraz błędny zapis nazwiska. Prosi o poprawienie danych we wszystkich kanałach obsługi i potwierdzenie wykonania zmiany.",
+      "{OSOBA} żąda ograniczenia przetwarzania danych związanych z polisą mieszkaniową {POLISA} do czasu wyjaśnienia rozbieżności w historii zgłoszeń i zakresie zapisanych informacji. Wskazuje, że kwestionuje prawidłowość części danych i oczekuje czasowego wstrzymania operacji na tych danych poza ich przechowywaniem.",
+      "{OSOBA} prosi o wydanie kopii danych w ustrukturyzowanym formacie nadającym się do przeniesienia do innego banku, w zakresie danych przekazanych przez nią przy prowadzeniu rachunku {IBAN}. W piśmie powołuje się na prawo do przenoszenia danych i prosi o przekazanie pliku na trwałym nośniku lub do odbioru elektronicznego.",
+      "{OSOBA} wnosi o uzupełnienie danych osobowych w dokumentacji polisy na życie {POLISA}, ponieważ przy zawarciu umowy pominięto drugi człon nazwiska oraz aktualny adres {ADRES}. Żąda, aby od tej chwili wszystkie decyzje i korespondencja były sporządzane zgodnie z poprawionymi danymi.",
+      "{OSOBA} żąda informacji, czy Vistula Towarzystwo Ubezpieczeń S.A. przetwarza dane biometryczne lub nagrania głosu z infolinii przypisane do jego osoby, a jeśli tak — wnosi o dostęp do tych danych oraz wskazanie okresu ich przechowywania. Sprawa dotyczy wcześniejszych kontaktów związanych ze szkodą {SZKODA}.",
+      "{OSOBA} składa żądanie usunięcia danych z formularzy niedoszłego wniosku o polisę komunikacyjną, którego ostatecznie nie zawarto, wskazując, że nie doszło do podpisania żadnej umowy. Domaga się również informacji, czy dane zostały przekazane pośrednikowi lub porównywarce ofert.",
+      "{OSOBA} wnosi sprzeciw wobec profilowania w celu przedstawiania ofert ubezpieczeniowych i bankowych, twierdząc, że po analizie wcześniejszych kontaktów zaczęła otrzymywać dopasowane propozycje produktów. Żąda zaprzestania zautomatyzowanego przetwarzania jej danych w tym celu oraz wyjaśnienia logiki takiego działania.",
+      "{OSOBA} prosi o przekazanie pełnej historii operacji przetwarzania jego danych osobowych w związku z likwidacją szkody {SZKODA}, w tym kategorii danych, celu użycia i odbiorców wewnętrznych. Zaznacza, że nie chodzi o dokumenty odszkodowawcze, lecz o realizację prawa dostępu z RODO.",
+      "{OSOBA} żąda, aby jego dane kontaktowe nie były dalej wykorzystywane do obsługi korespondencji elektronicznej i wnosi o zmianę preferowanego kanału komunikacji na wyłącznie listowny pod adresem {ADRES}. Wskazuje, że jest to żądanie aktualizacji i ograniczenia zakresu przetwarzanych danych kontaktowych.",
+      "{OSOBA} występuje o potwierdzenie, czy po zamknięciu rachunku związanego z {IBAN} nadal są przetwarzane jego dane, a jeśli tak — o wskazanie podstaw prawnych i planowanych terminów usunięcia poszczególnych kategorii informacji. Dodatkowo prosi o kopię danych identyfikacyjnych i kontaktowych pozostających w zbiorach banku.",
+      "{OSOBA} żąda sprostowania danych w aktach szkody {SZKODA}, ponieważ omyłkowo przypisano jej cudzy numer telefonu i nieaktualny adres {ADRES}. Wnosi także o poinformowanie wszystkich odbiorców, którym przekazano błędne dane, o dokonanej korekcie.",
+      "{OSOBA} jako były ubezpieczający z polisy komunikacyjnej {POLISA} wnosi o przeniesienie swoich danych osobowych do wskazanego podmiotu trzeciego w zakresie, w jakim dane były dostarczone przez nią przy zawieraniu umowy. Prosi, aby przekazanie odbyło się w powszechnie używanym formacie i obejmowało także dane kontaktowe oraz historię oświadczeń.",
+      "{OSOBA} składa wniosek o ograniczenie przetwarzania danych osobowych po zgłoszeniu reklamacji dotyczącej rachunku {IBAN}, argumentując, że część zapisów w systemie jest niekompletna i może prowadzić do błędnych decyzji. Żąda oznaczenia danych jako spornych do czasu zakończenia weryfikacji.",
+      "{OSOBA} zwraca się o realizację prawa dostępu w nietypowym zakresie: chce otrzymać zestawienie wszystkich kategorii dokumentów, w których występują jej dane osobowe, zarówno w części ubezpieczeniowej, jak i bankowej. Wskazuje, że zależy jej na mapie przetwarzania danych, a nie tylko na ogólnym potwierdzeniu, że firma je posiada."
+    ],
+    "hardCases": [
+      "{OSOBA} pisze, że nie kwestionuje salda rachunku {IBAN} ani żadnej transakcji, ale domaga się natychmiastowego wydania kopii wszystkich swoich danych osobowych związanych z otwarciem i obsługą konta oraz informacji o ich źródle. Mimo użycia słów kojarzonych ze sprawą bankową, treść stanowi wniosek z art. 15 RODO.",
+      "{OSOBA} w nawiązaniu do szkody {SZKODA} zaznacza, że nie składa odwołania od decyzji i nie żąda dopłaty, tylko wnosi o usunięcie nadmiarowych danych medycznych zebranych przy likwidacji sprawy oraz o ograniczenie dalszego ich przetwarzania. Pismo wygląda jak kontynuacja sprawy odszkodowawczej, lecz jednoznacznie dotyczy praw z RODO."
+    ]
+  },
+  {
+    "label": "DEATH_NOTIFICATION",
+    "briefs": [
+      "Córka zgłasza zgon ojca {OSOBA}, który był posiadaczem rachunku w Vistula Bank, i wnosi o zablokowanie dostępu do konta oraz wskazanie, jakie dokumenty są potrzebne do wypłaty środków spadkobiercom; dołącza odpis aktu zgonu.",
+      "Pracodawca informuje, że pracownik {OSOBA}, objęty grupowym ubezpieczeniem na życie powiązanym z polisą {POLISA}, zmarł dnia {DATA}; przekazuje akt zgonu i prosi o kontakt w sprawie świadczenia dla osoby uprawnionej.",
+      "Brat zmarłego zawiadamia o śmierci {OSOBA}, który miał w Vistula TU polisę NNW {POLISA}, i pyta, czy z tytułu zgonu należne jest świadczenie oraz komu przysługuje; w załączeniu przesyła akt zgonu.",
+      "Dom pomocy społecznej przekazuje informację, że pensjonariusz {OSOBA} zmarł w dniu {DATA}, a w jego dokumentach znajduje się korespondencja dotycząca ubezpieczenia w Vistula TU; placówka załącza kartę informacyjną i prosi o wskazanie dalszej procedury dla rodziny.",
+      "Pełnomocnik spadkobierców zawiadamia o zgonie {OSOBA}, właściciela polisy mieszkaniowej {POLISA}, prosząc o odnotowanie tej okoliczności i informację, czy z umowy przysługuje zwrot składki albo inne należności; do pisma dołącza akt zgonu.",
+      "Partner życiowy zgłasza śmierć {OSOBA}, który posiadał kredyt z ubezpieczeniem spłaty w Vistula Bank, i wnosi o uruchomienie procedury świadczenia z tej ochrony; załącza akt zgonu oraz prosi o listę wymaganych dokumentów.",
+      "Administrator wspólnoty mieszkaniowej informuje, że właściciel lokalu {OSOBA}, korespondujący z Państwem w sprawie polisy majątkowej {POLISA}, zmarł; prosi o kierowanie dalszej korespondencji do spadkobierców po przedstawieniu dokumentów, a obecnie przesyła odpis aktu zgonu.",
+      "Ojciec osoby zmarłej zawiadamia, że {OSOBA} poniósł śmierć w wypadku dnia {DATA} i był objęty indywidualnym ubezpieczeniem na życie {POLISA}; wnosi o wszczęcie postępowania o wypłatę świadczenia i wskazanie dalszych kroków.",
+      "Zakład pogrzebowy, działając na prośbę rodziny, przekazuje do wiadomości Vistula TU informację o zgonie {OSOBA} oraz dane kontaktowe osoby organizującej formalności; rodzina prosi jednocześnie o informację, czy zmarły posiadał polisę z assistance pogrzebowym lub świadczeniem na wypadek śmierci.",
+      "Wnuczka informuje o śmierci babci {OSOBA}, która opłacała polisę oszczędnościowo-ubezpieczeniową {POLISA}, i prosi o wstrzymanie wszelkich obciążeń oraz przekazanie informacji o należnych środkach; w załączeniu przesyła akt zgonu.",
+      "Współwłaściciel pojazdu zawiadamia, że drugi współwłaściciel {OSOBA} zmarł, a samochód był objęty polisą komunikacyjną {POLISA}; prosi o odnotowanie zgonu i wskazanie, jakie dokumenty są potrzebne do dalszej obsługi umowy.",
+      "Kurator spadku informuje o śmierci {OSOBA} i zwraca się o udzielenie informacji, czy zmarły posiadał aktywne produkty ubezpieczeniowe lub bankowe w Vistula; dołącza odpis aktu zgonu oraz dokument umocowania.",
+      "Siostra zmarłej zgłasza, że {OSOBA} posiadała rachunek oszczędnościowy oraz kartę kredytową w Vistula Bank, i prosi o zarejestrowanie zgonu oraz informację o procedurze zamknięcia produktów po dostarczeniu aktu zgonu.",
+      "Ubezpieczający zawiadamia, że osoba wskazana jako ubezpieczony, {OSOBA}, zmarła dnia {DATA} w trakcie trwania polisy podróżnej {POLISA}; prosi o potwierdzenie przyjęcia zgłoszenia i instrukcję w sprawie należnych świadczeń."
+    ],
+    "hardCases": [
+      "W nawiązaniu do reklamacji dotyczącej naliczeń na rachunku {IBAN} informuję, że posiadacz konta {OSOBA} zmarł dnia {DATA}; proszę potraktować pismo przede wszystkim jako zgłoszenie zgonu i wskazać procedurę dla spadkobierców, w załączeniu akt zgonu.",
+      "Zgłaszam szkodę dotyczącą pojazdu objętego polisą {POLISA}, ale najistotniejsze jest to, że ubezpieczony {OSOBA} zmarł po zdarzeniu dnia {DATA}; proszę o uruchomienie postępowania z tytułu śmierci oraz informację o dokumentach potrzebnych do wypłaty świadczenia."
+    ]
+  },
+  {
+    "label": "CONTRACT_WITHDRAWAL",
+    "briefs": [
+      "{OSOBA} składa oświadczenie o odstąpieniu od umowy autocasco {POLISA}, zawartej w oddziale podczas zakupu samochodu, wskazując że mieści się jeszcze w ustawowym terminie i wnosi o potwierdzenie rozwiązania umowy od początku.",
+      "Rodzic działający w imieniu dziecka rezygnuje z nowo zawartego ubezpieczenia szkolnego {POLISA} i wyraźnie wskazuje, że korzysta z prawa odstąpienia od umowy jako konsument w przewidzianym terminie.",
+      "Klient odwołuje się do pouczenia otrzymanego wraz z dokumentami i składa odstąpienie od umowy ubezpieczenia mieszkania {POLISA}, prosząc o zwrot ewentualnie pobranej składki na {IBAN}.",
+      "{OSOBA} przesyła krótkie pismo, w którym odstępuje od umowy terminowego ubezpieczenia na życie {POLISA}, zawartej podczas wizyty przedstawiciela, bez wskazywania przyczyny.",
+      "Przedsiębiorca prowadzący jednoosobową działalność informuje, że jako konsument zawarł prywatną polisę turystyczną {POLISA} i w ustawowym terminie od niej odstępuje, zanim rozpoczął się okres ochrony.",
+      "Klient składa odstąpienie od umowy rachunku oszczędnościowo-rozliczeniowego w Vistula Bank, otwartego przez aplikację mobilną, i żąda uznania umowy za niezawartą oraz zamknięcia powiązanych usług.",
+      "Posiadacz nowo uruchomionej karty kredytowej w Vistula Bank oświadcza, że odstępuje od umowy zawartej na odległość w przewidzianym terminie i prosi o informację, jakie opłaty podlegają zwrotowi.",
+      "{OSOBA} rezygnuje z pakietu assistance dołączonego do polisy komunikacyjnej {POLISA}, wskazując wprost, że nie chodzi o wypowiedzenie na przyszłość, lecz o odstąpienie od świeżo zawartej umowy.",
+      "Klient przesyła skan własnoręcznie podpisanego oświadczenia o odstąpieniu od grupowego ubezpieczenia zdrowotnego {POLISA}, do którego przystąpił kilka dni wcześniej za pośrednictwem banku.",
+      "Spadkobierca informuje, że porządkując dokumenty znalazł potwierdzenie niedawno zawartej przez zmarłego umowy {POLISA} i wnosi o potraktowanie pisma jako odstąpienia, o ile termin ustawowy jeszcze biegnie od dnia doręczenia dokumentów.",
+      "Najemca mieszkania odstępuje od umowy ubezpieczenia lokalu i OC w życiu prywatnym {POLISA}, zawartej razem z umową najmu, podkreślając że korzysta z uprawnienia ustawowego, a nie z rezygnacji po okresie ochrony.",
+      "Klient pisze reklamację na sposób sprzedaży, ale w treści jednoznacznie oświadcza, że niezależnie od zastrzeżeń odstępuje od umowy inwestycyjno-ubezpieczeniowej {POLISA} w przewidzianym terminie.",
+      "{OSOBA} wnosi o odstąpienie od umowy konta osobistego wraz z bankowością elektroniczną zawartej kurierem, wskazując że nie aktywował jeszcze dostępu i korzysta z prawa ustawowego.",
+      "Cudzoziemiec, który zawarł polisę NNW {POLISA} podczas pobytu w Polsce, przesyła pismo po polsku i angielsku z jednoznacznym oświadczeniem o odstąpieniu od umowy w terminie przewidzianym dla konsumenta."
+    ],
+    "hardCases": [
+      "Klient używa sformułowań typowych dla wypowiedzenia i prosi o „zamknięcie polisy ze skutkiem natychmiastowym”, ale dalej wyjaśnia, że umowa {POLISA} została zawarta kilka dni temu i korzysta on z prawa odstąpienia, nie wypowiedzenia.",
+      "W piśmie pojawia się żądanie „unieważnienia” oraz zwrotu pieniędzy z powodu rzekomego błędu doradcy, jednak zasadnicza treść stanowi oświadczenie, że {OSOBA} odstępuje od umowy rachunku w Vistula Bank zawartej na odległość w ustawowym terminie."
+    ]
+  },
+  {
+    "label": "CLAIM_NOTIFICATION",
+    "briefs": [
+      "{OSOBA} zgłasza pęknięcie szyby czołowej i uszkodzenie maski auta po uderzeniu gałęzi podczas wichury; wskazuje polisę AC {POLISA}, datę zdarzenia {DATA} i prosi o otwarcie szkody oraz informację o dalszej procedurze.",
+      "Wspólnota mieszkaniowa reprezentowana przez {OSOBA} zgłasza szkodę z ubezpieczenia budynku {POLISA} po pożarze w piwnicy; opisuje okopcone części wspólne, uszkodzoną instalację elektryczną i konieczność pilnych oględzin.",
+      "Przedsiębiorca {OSOBA} zawiadamia o włamaniu do lokalu usługowego objętego polisą {POLISA}; sprawcy wybili witrynę i uszkodzili kasę fiskalną oraz drzwi wejściowe.",
+      "{OSOBA} zgłasza awarię instalacji fotowoltaicznej po przepięciu burzowym w domu pod adresem {ADRES}; w ramach polisy mieszkaniowej {POLISA} wnosi o przyjęcie szkody dotyczącej falownika i paneli.",
+      "Rodzic dziecka, {OSOBA}, zgłasza roszczenie z polisy następstw nieszczęśliwych wypadków {POLISA} po złamaniu ręki podczas zajęć sportowych w szkole; opisuje przebieg zdarzenia i leczenie ambulatoryjne.",
+      "{OSOBA} zgłasza śmierć ubezpieczonego i wnosi o uruchomienie świadczenia z polisy na życie {POLISA}; podaje datę zgonu {DATA} oraz informuje, że dośle wymagane dokumenty.",
+      "Firma transportowa zgłasza szkodę cargo z polisy {POLISA}: podczas przewozu doszło do przemieszczenia ładunku i uszkodzenia części towaru, co ujawniono przy rozładunku.",
+      "Klient {OSOBA} zgłasza uszkodzenie nagrobka na cmentarzu po przewróceniu drzewa podczas silnego wiatru; powołuje się na polisę majątkową {POLISA} i opisuje zakres zniszczeń.",
+      "{OSOBA} informuje o pogryzieniu przez psa i zgłasza roszczenie z OC w życiu prywatnym właściciela zwierzęcia ubezpieczonego w Vistula TU pod numerem {POLISA}; wskazuje obrażenia oraz koszty opatrunków i konsultacji lekarskiej.",
+      "Klient prowadzący gospodarstwo sadownicze zgłasza szkodę w tunelu foliowym po intensywnych opadach śniegu; polisa {POLISA}, uszkodzona konstrukcja i zniszczone młode nasadzenia wymagają pilnej oceny.",
+      "{OSOBA} zgłasza szkodę assistance po unieruchomieniu pojazdu za granicą wskutek zatankowania niewłaściwego paliwa; podaje numer polisy {POLISA} i prosi o rejestrację zdarzenia oraz rozliczenie kosztów holowania.",
+      "Najemca lokalu, {OSOBA}, zgłasza stłuczenie ceramicznej płyty grzewczej i pęknięcie blatu kuchennego w wyniku upadku ciężkiego przedmiotu; szkoda ma być likwidowana z polisy mieszkaniowej {POLISA}.",
+      "{OSOBA} zgłasza ubezpieczeniową szkodę turystyczną z polisy {POLISA} po odwołaniu wyjazdu z powodu nagłego pobytu w szpitalu; wnosi o przyjęcie roszczenia za niewykorzystane koszty rezerwacji.",
+      "Posiadacz rachunku w Vistula Bank, {OSOBA}, zgłasza roszczenie z dołączonego do konta ubezpieczenia „bezpieczna karta” {POLISA} po kradzieży telefonu i portfela oraz nieuprawnionych transakcjach wykonanych przed zastrzeżeniem karty."
+    ],
+    "hardCases": [
+      "W nawiązaniu do wcześniejszej reklamacji dotyczącej obsługi proszę przede wszystkim zarejestrować nową szkodę z polisy {POLISA}: podczas cofania pojazd został uszkodzony na parkingu, a sprawca odjechał bez pozostawienia danych.",
+      "Proszę o pilne wstrzymanie windykacji rzekomej należności, a niezależnie od tego przyjąć zgłoszenie szkody z ubezpieczenia mieszkania {POLISA}, ponieważ {DATA} doszło do pęknięcia wężyka i zalania łazienki oraz przedpokoju pod adresem {ADRES}."
+    ]
+  },
+  {
+    "label": "CLAIM_DOCUMENTS",
+    "briefs": [
+      "Pełnomocnik klienta dosyła do szkody {SZKODA} skany rachunków za wynajem auta zastępczego oraz umowę najmu, wskazując, że dokumenty mają uzupełnić wcześniej zgłoszoną szkodę komunikacyjną z polisy {POLISA}.",
+      "Administrator wspólnoty mieszkaniowej przekazuje do szkody {SZKODA} protokół zalania lokalu, kosztorys osuszania i fakturę za interwencję hydraulika, w związku ze szkodą majątkową zgłoszoną przez {OSOBA}.",
+      "Poszkodowany przesyła do szkody {SZKODA} imienne paragony i faktury za zakup leków, ortezy oraz dojazdy na rehabilitację po wypadku, z prośbą o dołączenie ich do akt sprawy.",
+      "Serwis telefonów komórkowych przesyła ekspertyzę techniczną, wycenę naprawy i dokument przyjęcia urządzenia do serwisu jako uzupełnienie szkody {SZKODA} dotyczącej uszkodzonego sprzętu objętego ochroną.",
+      "Klient dosyła do szkody {SZKODA} zdjęcia uszkodzonego dachu wykonane po ustąpieniu burzy oraz fakturę za zabezpieczenie budynku plandeką, w ramach szkody z ubezpieczenia domu {POLISA}.",
+      "Szkoła językowa jako pracodawca ubezpieczonego przekazuje do szkody {SZKODA} zaświadczenie o okresie niezdolności do pracy oraz potwierdzenie utraconych zajęć, aby uzupełnić dokumentację do świadczenia z polisy życiowej {POLISA}.",
+      "Gabinet rehabilitacyjny przesyła do szkody {SZKODA} harmonogram odbytych zabiegów, fakturę zbiorczą i potwierdzenie opłaty wystawione na {OSOBA}, dotyczące leczenia następstw nieszczęśliwego wypadku.",
+      "Klientka przesyła do szkody {SZKODA} rachunek za wymianę wybitej szyby balkonowej oraz zdjęcia miejsca zdarzenia i uszkodzonych ram, wskazując, że dokumenty dotyczą szkody mieszkaniowej.",
+      "Pomoc drogowa dosyła do szkody {SZKODA} fakturę za holowanie pojazdu i kartę wykonania usługi, prosząc o uwzględnienie kosztu w rozliczeniu szkody komunikacyjnej {OSOBA}.",
+      "Członek rodziny ubezpieczonego przekazuje do szkody {SZKODA} odpis karty zgonu, fakturę za transport medyczny i rachunki związane z leczeniem poprzedzającym zgon, jako uzupełnienie dokumentów do roszczenia z polisy na życie {POLISA}.",
+      "Klient prowadzący działalność gospodarczą dosyła do szkody {SZKODA} zestawienie utraconego wyposażenia biura po włamaniu, faktury zakupu sprzętu oraz zdjęcia z miejsca zdarzenia, w ramach ubezpieczenia mienia firmowego.",
+      "Zarządca parkingu przesyła zapis monitoringu na nośniku oraz protokół zdarzenia jako materiał dowodowy do szkody {SZKODA}, dotyczącej uszkodzenia pojazdu należącego do {OSOBA}.",
+      "Posiadacz rachunku w Vistula Bank przesyła do szkody {SZKODA} potwierdzenie obciążenia karty, korespondencję z punktem usługowym i rachunek za awaryjne zabezpieczenie mienia, ponieważ dokumenty mają potwierdzić rozmiar szkody powstałej po kradzieży portfela i kluczy.",
+      "Klient uzupełnia szkodę {SZKODA} o opinię rzeczoznawcy dotyczącego wartości zniszczonego roweru, fakturę zakupu akcesoriów oraz zdjęcia uszkodzeń po kolizji, wnosząc o dołączenie ich do prowadzonego postępowania."
+    ],
+    "hardCases": [
+      "W nawiązaniu do reklamacji dotyczącej opóźnionej wypłaty, przesyłam jednak przede wszystkim brakujące dokumenty do szkody {SZKODA}: rachunki za leczenie, wyniki badań i zaświadczenie lekarskie, prosząc o ich uwzględnienie w aktach.",
+      "Proszę o aktualizację danych do korespondencji, a jednocześnie w załączeniu przekazuję do szkody {SZKODA} protokół straży pożarnej, zdjęcia spalonego pomieszczenia i fakturę za uprzątnięcie po pożarze."
+    ]
+  },
+  {
+    "label": "CONTRACT_TERMINATION",
+    "briefs": [
+      "{OSOBA} składa wypowiedzenie umowy autocasco {POLISA} ze skutkiem na koniec bieżącego okresu ubezpieczenia i prosi o nieprzedłużanie ochrony na kolejny rok.",
+      "Wspólnota mieszkaniowa reprezentowana przez {OSOBA} wypowiada umowę ubezpieczenia nieruchomości {POLISA}, wskazując że od {DATA} ochrona będzie zapewniona przez innego ubezpieczyciela.",
+      "{OSOBA} rezygnuje z pakietu assistance domowego objętego polisą {POLISA} i wnosi o rozwiązanie umowy zgodnie z jej warunkami wypowiedzenia.",
+      "Rodzic działający w imieniu dziecka, {OSOBA}, wypowiada polisę szkolną NNW {POLISA} przed kolejnym okresem ochrony, bez zgłaszania zastrzeżeń do obsługi.",
+      "{OSOBA} wypowiada umowę indywidualnego konta oszczędnościowego w Vistula Bank i prosi o zamknięcie rachunku powiązanego z numerem {IBAN} po upływie wymaganego terminu.",
+      "Spadkobierca, {OSOBA}, zawiadamia o śmierci posiadacza rachunku i wnosi o rozwiązanie umowy rachunku bankowego {IBAN} po przeprowadzeniu wymaganych formalności.",
+      "{OSOBA} składa rezygnację z karty kredytowej powiązanej z rachunkiem {IBAN} oraz wypowiada umowę o ten produkt, prosząc o jej zamknięcie po spłacie całości zadłużenia.",
+      "Jednoosobowy przedsiębiorca {OSOBA} wypowiada firmowe ubezpieczenie mienia i sprzętu elektronicznego {POLISA}, ponieważ zakończył prowadzenie działalności pod adresem {ADRES}.",
+      "Parafia reprezentowana przez {OSOBA} wypowiada polisę ubezpieczenia budynku plebanii {POLISA} z zachowaniem przewidzianego w umowie terminu.",
+      "{OSOBA} rezygnuje z dalszego opłacania i kontynuowania polisy posagowej {POLISA}, prosząc o przyjęcie wypowiedzenia na zasadach określonych w umowie.",
+      "Klient {OSOBA} wypowiada umowę ubezpieczenia turystycznego rocznego {POLISA}, ponieważ nie planuje już kolejnych wyjazdów i nie chce odnawiania polisy.",
+      "Stowarzyszenie reprezentowane przez {OSOBA} składa wypowiedzenie umowy ubezpieczenia OC organizatora wydarzeń {POLISA} po zakończeniu swojej działalności statutowej.",
+      "{OSOBA} wnosi o rozwiązanie umowy rachunku wspólnego w Vistula Bank prowadzonego pod numerem {IBAN}, wskazując że współposiadacze rezygnują z dalszego korzystania z tego konta.",
+      "Rolnik {OSOBA} wypowiada umowę ubezpieczenia budynków gospodarczych {POLISA} na najbliższy dopuszczalny termin, gdyż przekazał gospodarstwo następcy."
+    ],
+    "hardCases": [
+      "{OSOBA} nawiązuje do wcześniejszej reklamacji dotyczącej składki, ale jedynym żądaniem w piśmie jest wypowiedzenie polisy mieszkaniowej {POLISA} i brak jej wznowienia na kolejny okres.",
+      "W związku z toczącą się sprawą o odszkodowanie z polisy {POLISA}, {OSOBA} prosi przede wszystkim o przyjęcie wypowiedzenia tej umowy ze skutkiem zgodnym z OWU; wzmianka o szkodzie ma wyłącznie charakter informacyjny."
+    ]
+  },
+  {
+    "label": "PERSONAL_DATA_CHANGE",
+    "briefs": [
+      "{OSOBA} wnosi o dopisanie nowego adresu zamieszkania oraz pozostawienie dotychczasowego adresu do doręczeń dla polisy mieszkaniowej {POLISA}, ponieważ lokal objęty ochroną jest inny niż miejsce stałego pobytu.",
+      "Pełnomocnik klienta informuje, że {OSOBA} zmienił numer telefonu używany do autoryzacji kontaktu z Vistula Bank i prosi o aktualizację danych kontaktowych przy rachunku powiązanym z umową {POLISA}.",
+      "{OSOBA} prosi o zmianę adresu e-mail wyłącznie do przesyłania potwierdzeń operacji i dokumentów bankowych, bez zmiany adresu do kontaktu ogólnego.",
+      "Po zakończeniu działalności gospodarczej {OSOBA} wnosi o usunięcie firmowego adresu korespondencyjnego i wpisanie prywatnego adresu {ADRES} do obsługi polisy na życie {POLISA}.",
+      "Klientka wskazuje, że poprzedni numer telefonu jest nieaktywny po utracie służbowej karty SIM, i prosi o wpisanie nowego numeru do obsługi szkody z polisy {POLISA}.",
+      "{OSOBA} zawiadamia o zmianie nazwiska po powrocie do nazwiska rodowego i wnosi o aktualizację danych we wszystkich produktach prowadzonych przez Vistula Towarzystwo Ubezpieczeń S.A. oraz Vistula Bank.",
+      "W związku z wyjazdem za granicę {OSOBA} prosi o zmianę preferowanego kanału kontaktu na e-mail oraz wykreślenie numeru telefonu z danych kontaktowych przypisanych do polisy {POLISA}.",
+      "Przedsiębiorca ubezpieczający flotę pojazdów prosi o zmianę adresu siedziby firmy na {ADRES} i aktualizację tego adresu we wszystkich polisach komunikacyjnych zawartych na nazwisko {OSOBA}.",
+      "{OSOBA} wnosi o zmianę rachunku do zwrotu niewykorzystanej składki i przyszłych wypłat świadczeń na {IBAN} w ramach umowy ubezpieczenia turystycznego {POLISA}.",
+      "Rodzic małoletniego ubezpieczonego informuje o zmianie swojego numeru telefonu i adresu do korespondencji, prosząc o aktualizację danych przedstawiciela ustawowego przy polisie dziecka {POLISA}.",
+      "Klient prosi o poprawienie błędnie zapisanego drugiego imienia oraz aktualizację adresu zamieszkania w danych do rachunku oszczędnościowego prowadzonego przez Vistula Bank.",
+      "{OSOBA} zwraca się o zmianę adresu do doręczeń na skrytkę pocztową, przy pozostawieniu bez zmian adresu nieruchomości objętej ochroną w polisie {POLISA}.",
+      "Po zmianie banku {OSOBA} wnosi o podstawienie nowego rachunku {IBAN} do pobrań i zwrotów związanych z polisą komunikacyjną {POLISA}.",
+      "Klientka prosi o aktualizację danych kontaktowych po zmianie operatora: nowy numer telefonu ma obowiązywać dla bankowości elektronicznej, a nowy e-mail dla korespondencji dotyczącej polisy {POLISA}."
+    ],
+    "hardCases": [
+      "{OSOBA} nawiązuje do zgłoszonej szkody {SZKODA} i prosi o dalsze kierowanie korespondencji już na nowy adres {ADRES}; istotą pisma jest wyłącznie aktualizacja danych adresowych, bez odwołania od decyzji i bez dosyłania dokumentów do szkody.",
+      "W piśmie dotyczącym zajęcia komorniczego pod sygnaturą {SYGN_KM} klient wskazuje, że nie kwestionuje potrąceń, lecz wnosi jedynie o zmianę numeru telefonu i adresu e-mail do kontaktu przy rachunku {IBAN}."
+    ]
+  },
+  {
+    "label": "POWER_OF_ATTORNEY",
+    "briefs": [
+      "{OSOBA} ustanawia pełnomocnikiem swojego brata do reprezentowania go wyłącznie w sprawach związanych z rachunkiem bankowym prowadzonym przez Vistula Bank, w tym do składania i podpisywania dyspozycji. Pismo zawiera dane pełnomocnika i zakres umocowania, bez żadnych innych wniosków.",
+      "Wspólnota mieszkaniowa reprezentowana przez {OSOBA} przesyła uchwałę oraz pełnomocnictwo dla zarządcy nieruchomości do prowadzenia wszelkiej korespondencji dotyczącej ubezpieczenia budynku objętego polisą {POLISA}.",
+      "{OSOBA}, przebywający czasowo za granicą, udziela pełnomocnictwa swojej partnerce do reprezentowania go w kontaktach z Vistula Towarzystwo Ubezpieczeń S.A. w zakresie polisy na życie {POLISA}.",
+      "Przedsiębiorca prowadzący jednoosobową działalność gospodarczą wyznacza pracownika biura jako pełnomocnika do obsługi spraw dotyczących firmowej polisy majątkowej {POLISA}, w szczególności do odbioru korespondencji i składania oświadczeń.",
+      "{OSOBA} zawiadamia o zmianie zakresu wcześniej udzielonego pełnomocnictwa: odtąd pełnomocnik może działać jedynie w sprawach polisy komunikacyjnej {POLISA}, bez prawa reprezentacji w innych produktach.",
+      "Rodzic małoletniego ubezpieczonego, {OSOBA}, składa pełnomocnictwo dla drugiego rodzica do samodzielnego reprezentowania dziecka we wszelkich sprawach dotyczących ubezpieczenia następstw nieszczęśliwych wypadków {POLISA}.",
+      "Spółka z ograniczoną odpowiedzialnością przesyła pełnomocnictwo dla członka zarządu oddziału regionalnego do reprezentowania spółki wobec Vistula Bank w sprawach rachunku {IBAN}.",
+      "{OSOBA} odwołuje wszystkie dotychczas udzielone pełnomocnictwa dotyczące jego produktów w Vistula Towarzystwo Ubezpieczeń S.A. i Vistula Bank oraz wskazuje, że od tej chwili jedyną osobą umocowaną pozostaje pełnomocnik wskazany w załączonym dokumencie.",
+      "Dom pomocy społecznej, działając za zgodą mieszkańca {OSOBA}, przekazuje pełnomocnictwo dla pracownika socjalnego do odbioru informacji i składania oświadczeń w sprawach polisy na życie {POLISA}.",
+      "{OSOBA} ustanawia dwóch pełnomocników do działania łącznie w sprawach związanych z likwidacją szkody {SZKODA}, zaznaczając, że żaden z nich nie może działać samodzielnie.",
+      "Syndyk masy upadłości przesyła dokument umocowujący aplikanta kancelarii do reprezentowania go przed Vistula Towarzystwo Ubezpieczeń S.A. w sprawach polis należących do upadłego, w tym {POLISA}.",
+      "{OSOBA} składa pismo, w którym ogranicza wcześniej udzielone pełnomocnictwo bankowe wyłącznie do prawa uzyskiwania informacji o rachunku {IBAN}, bez możliwości składania dyspozycji finansowych.",
+      "Kurator ustanowiony dla {OSOBA} przekazuje pełnomocnictwo substytucyjne dla adwokata do reprezentowania podopiecznego w kontaktach dotyczących ubezpieczenia mieszkania pod adresem {ADRES}.",
+      "Stowarzyszenie będące ubezpieczającym wskazuje nowego pełnomocnika do prowadzenia wszystkich spraw związanych z grupową polisą {POLISA}, jednocześnie cofając umocowanie poprzedniej osoby kontaktowej."
+    ],
+    "hardCases": [
+      "W piśmie pojawia się prośba o „wstrzymanie wypłaty” i „kierowanie całej korespondencji” w sprawie {SZKODA}, ale z dalszej treści wynika, że jedynym celem jest ustanowienie pełnomocnika dla {OSOBA} do reprezentacji w tej sprawie, bez składania żadnej dyspozycji co do samej szkody.",
+      "Nadawca używa sformułowań typowych dla reklamacji rachunku, wspominając o „nieuprawnionych kontaktach” dotyczących {IBAN}, lecz zasadnicza treść pisma sprowadza się wyłącznie do odwołania pełnomocnictwa udzielonego wcześniej wskazanej osobie i zakazu dalszego reprezentowania {OSOBA}."
+    ]
+  },
+  {
+    "label": "INVOICE",
+    "briefs": [
+      "Faktura VAT od kancelarii tłumaczeń za przekład dokumentacji medycznej do roszczeń z ubezpieczenia na życie, wystawiona na Vistula Towarzystwo Ubezpieczeń S.A., z terminem płatności, NIP sprzedawcy i wskazaniem liczby stron rozliczeniowych. W treści mogą pojawić się odwołania do spraw {SZKODA}, ale dokument ma formę klasycznej faktury sprzedażowej.",
+      "Rachunek od lokalnej drukarni za wydruk i dostawę materiałów informacyjnych do sprzedaży polis majątkowych oraz ulotek dla oddziałów Vistula Bank. Dokument zawiera dane sprzedawcy, datę wykonania usługi {DATA}, kwotę do zapłaty i numer rachunku {IBAN}.",
+      "Faktura od firmy kurierskiej za miesięczną obsługę przesyłek z dokumentami polisowymi i korespondencją bankową między centralą a placówkami. Na dokumencie widnieje zestawienie paczek, opłata paliwowa, NIP kontrahenta i termin płatności.",
+      "Nota księgowa od operatora parkingu lotniskowego za zagubiony bilet i dodatkowe koszty postoju samochodu służbowego pracownika likwidacji szkód. Wystawca wskazuje kwotę należności, dane nabywcy oraz rachunek {IBAN} do uregulowania opłaty.",
+      "Faktura VAT od firmy szkoleniowej za przeprowadzenie warsztatów dla doradców sprzedających ubezpieczenia komunikacyjne i produkty oszczędnościowe banku. Dokument obejmuje usługę szkoleniową, materiały uczestnika i wynajem sali w jednej pozycji lub kilku pozycjach.",
+      "Rachunek od lekarza orzecznika prowadzącego działalność gospodarczą za wykonanie konsultacji medycznych do oceny ryzyka w polisach na życie. W treści rachunku wymieniono liczbę wydanych opinii, stawkę jednostkową i dane do przelewu {IBAN}.",
+      "Faktura od dostawcy energii elektrycznej za zasilanie placówki przy {ADRES}, gdzie działa punkt obsługi klientów ubezpieczeniowych i bankowych. Dokument zawiera okres rozliczeniowy, numer PPE, kwoty netto i brutto oraz termin zapłaty.",
+      "Faktura korygująca od dostawcy mebli biurowych zmniejszająca wartość wcześniejszej dostawy foteli do sali obsługi klienta po uznaniu reklamacji ilościowej. Korekta wskazuje fakturę pierwotną, kwotę zmniejszenia i aktualną należność wobec sprzedawcy.",
+      "Faktura od firmy sprzątającej za jednorazowe sprzątanie po remoncie oddziału, w którym obsługiwane są rachunki bankowe i wznowienia polis. Na dokumencie znajdują się pozycje za mycie przeszkleń, wywóz odpadów i serwis sanitarny.",
+      "Nota obciążeniowa od wynajmującego powierzchnię biurową za refakturowane koszty wody i klimatyzacji przypadające na dany miesiąc. Mimo opisu administracyjnego dokument jest wystawiony jako należność do zapłaty przez Vistula Towarzystwo Ubezpieczeń S.A.",
+      "Faktura VAT od software house’u za udzielenie licencji na moduł do analizy fraudów w zgłoszeniach szkód komunikacyjnych oraz jego wdrożenie. Dokument rozdziela opłatę jednorazową i abonament miesięczny, podając NIP sprzedawcy i warunki płatności.",
+      "Rachunek uproszczony od grafika prowadzącego jednoosobową działalność za przygotowanie banerów internetowych promujących ubezpieczenie mieszkania i konto oszczędnościowe. W piśmie są dane wystawcy, opis usługi, kwota należna oraz data sprzedaży {DATA}.",
+      "Faktura od stacji paliw w modelu kart flotowych za tankowania pojazdów służbowych wykorzystywanych przez inspektorów terenowych. Załączone zestawienie obejmuje daty, numery rejestracyjne, litry paliwa i łączną kwotę do zapłaty.",
+      "Faktura od archiwum zewnętrznego za przechowywanie i udostępnianie teczek z dawną dokumentacją polisową oraz umowami rachunków bankowych. Dokument może zawierać osobne pozycje za magazynowanie pudeł i skany akt na żądanie."
+    ],
+    "hardCases": [
+      "Pismo zatytułowane „Wezwanie do zapłaty”, ale w treści i układzie jest to nota od dostawcy internetu za nieopłaconą dopłatę po przekroczeniu pakietu transmisji w oddziale. Zawiera numer dokumentu księgowego, NIP wystawcy, kwotę, termin płatności i rachunek {IBAN}, więc jednoznacznie jest dokumentem rozliczeniowym od kontrahenta.",
+      "Dokument wspomina „szkodę” i numer {SZKODA}, ponieważ dotyczy refaktury od warsztatu za holowanie i parkowanie zabezpieczonego pojazdu po kolizji, ale nie jest zgłoszeniem szkody ani reklamacją. To faktura wystawiona na Vistula Towarzystwo Ubezpieczeń S.A. z pozycjami usług, stawką VAT i kwotą brutto do zapłaty."
+    ]
+  },
+  {
+    "label": "OTHER",
+    "briefs": [
+      "Administrator nieruchomości przesyła do Vistula Towarzystwo Ubezpieczeń S.A. aktualizację danych korespondencyjnych wspólnoty mieszkaniowej oraz nowy adres do doręczeń dotyczący polisy majątkowej {POLISA}. Pismo nie zawiera żadnego wniosku o zmianę zakresu ochrony ani roszczeń.",
+      "Klient informuje, że odnalazł wcześniej zaginiony dowód rejestracyjny i prosi jedynie o odnotowanie tej informacji w aktach sprawy dotyczącej polisy komunikacyjnej {POLISA}. Nie zgłasza szkody, reklamacji ani potrzeby wypłaty.",
+      "Komornik sądowy przesyła ogólne zawiadomienie o wszczęciu postępowania egzekucyjnego przeciwko {OSOBA} pod sygnaturą {SYGN_KM}, pytając wyłącznie, czy spółka prowadzi na rzecz tej osoby rachunek bankowy lub wypłaca świadczenia. To pismo informacyjno-ustalające, bez zajęcia środków i bez dyspozycji realizacji.",
+      "Klient będący cudzoziemcem przesyła prośbę o wydanie ogólnego zaświadczenia o posiadaniu ubezpieczenia podróżnego na potrzeby procedury wizowej, wskazując swoje dane {OSOBA}, {PESEL}. Nie wnosi o zmianę umowy ani o wypłatę świadczenia.",
+      "Urząd gminy kieruje do spółki zapytanie statystyczne o liczbę aktywnych polis rolnych na terenie gminy według stanu na {DATA}, bez żądania danych osobowych klientów. Dokument ma charakter urzędowej ankiety, a nie postępowania odszkodowawczego czy reklamacyjnego.",
+      "Notariusz prosi o potwierdzenie, czy dla zmarłego {OSOBA} była zawarta polisa na życie {POLISA}, ponieważ informacja jest potrzebna do czynności spadkowych. Pismo nie zawiera zgłoszenia roszczenia przez uprawnionego ani wezwania do wypłaty.",
+      "Klient przesyła zawiadomienie, że omyłkowo wysłał na adres spółki dokumenty przeznaczone dla innego ubezpieczyciela, i prosi o ich zniszczenie lub zwrot na {ADRES}. Nie dotyczy to żadnej konkretnej szkody, polisy ani reklamacji.",
+      "Szpital występuje z pytaniem organizacyjnym, czy Vistula akceptuje elektroniczną wymianę dokumentacji medycznej przy obsłudze polis zdrowotnych, wskazując kontakt roboczy do działu współpracy. To korespondencja proceduralna, bez zgłoszenia świadczenia dla pacjenta.",
+      "Klient składa wniosek o przesłanie historii korespondencji marketingowej oraz informacji, z jakich kanałów kontaktu korzystał bank wobec {OSOBA}. Pismo dotyczy preferencji komunikacyjnych, a nie reklamacji rachunku {IBAN} czy dyspozycji finansowej.",
+      "Sąd rejonowy przekazuje odpis postanowienia o ustanowieniu kuratora dla {OSOBA} w sprawie {SYGN_SAD}, aby spółka aktualizowała sposób prowadzenia korespondencji. Dokument nie zawiera żądania wypłaty, blokady rachunku ani realizacji orzeczenia pieniężnego.",
+      "Były agent ubezpieczeniowy odsyła nieaktualne materiały reklamowe i identyfikator po zakończeniu współpracy, prosząc o potwierdzenie odbioru. To sprawa administracyjna, niezwiązana z polisą klienta czy likwidacją szkody.",
+      "Klient prowadzący działalność gospodarczą prosi o wystawienie zaświadczenia, że składki z tytułu polisy firmowej {POLISA} były opłacane terminowo, ponieważ dokument jest potrzebny w przetargu. Nie żąda korekty rozliczeń ani zwrotu pieniędzy.",
+      "Firma kurierska informuje o zagubieniu przesyłki nadanej przez Vistula do klienta i prosi o wskazanie, czy należy wznowić doręczenie na {ADRES}. To sprawa logistyczna dotycząca korespondencji, nie zaś reklamacja usługi bankowej lub zgłoszenie szkody.",
+      "Rzecznik prasowy redakcji ekonomicznej zwraca się z pytaniami o ogólne stanowisko spółki wobec cyberzagrożeń i prosi o komentarz do publikacji, bez odnoszenia się do konkretnego klienta. Korespondencja ma charakter medialny i nie inicjuje żadnej sprawy operacyjnej."
+    ],
+    "hardCases": [
+      "Klient pisze, że w związku ze szkodą {SZKODA} nie oczekuje żadnej dopłaty ani ponownego rozpatrzenia, a jedynie prosi o wydanie duplikatu decyzji i kopii korespondencji na potrzeby własnej dokumentacji. Mimo słów kojarzonych z odwołaniem lub reklamacją treść dotyczy wyłącznie udostępnienia dokumentów.",
+      "Posiadacz rachunku {IBAN} używa sformułowań o nieautoryzowanej transakcji i pilnej sprawie, ale z treści wynika, że nie składa reklamacji, lecz pyta jedynie, gdzie znaleźć archiwalne potwierdzenie operacji do okazania księgowej. Pismo nie zawiera żądania zwrotu środków ani zastrzeżenia instrumentu płatniczego."
+    ]
+  }
+]

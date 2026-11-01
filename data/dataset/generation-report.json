@@ -1,0 +1,169 @@
+{
+  "generatedAt": "2026-10-31T20:50:10.197Z",
+  "model": "gpt-5.4-2026-03-05",
+  "calls": 1029,
+  "lettersGenerated": 5070,
+  "nearDuplicatesDropped": 0,
+  "reRead": 46,
+  "droppedOffClass": 35,
+  "offClassExamples": [
+    {
+      "id": "claim_notification-02837",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "claim_notification-02909",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "claim_notification-02977",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "contract_termination-03517",
+      "intended": "CONTRACT_TERMINATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "contract_termination-03581",
+      "intended": "CONTRACT_TERMINATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "other-04753",
+      "intended": "OTHER",
+      "judged": "BAILIFF_INQUIRY"
+    },
+    {
+      "id": "gdpr_request-02074",
+      "intended": "GDPR_REQUEST",
+      "judged": "PERSONAL_DATA_CHANGE"
+    },
+    {
+      "id": "claim_notification-02838",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "claim_notification-02910",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "claim_notification-02978",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "contract_termination-03518",
+      "intended": "CONTRACT_TERMINATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "other-04670",
+      "intended": "OTHER",
+      "judged": "PERSONAL_DATA_CHANGE"
+    },
+    {
+      "id": "other-04822",
+      "intended": "OTHER",
+      "judged": "BAILIFF_INQUIRY"
+    },
+    {
+      "id": "other-04838",
+      "intended": "OTHER",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "other-04854",
+      "intended": "OTHER",
+      "judged": "GDPR_REQUEST"
+    },
+    {
+      "id": "claim_notification-02839",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "claim_notification-02907",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "contract_termination-03519",
+      "intended": "CONTRACT_TERMINATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "other-04743",
+      "intended": "OTHER",
+      "judged": "PERSONAL_DATA_CHANGE"
+    },
+    {
+      "id": "other-04751",
+      "intended": "OTHER",
+      "judged": "BAILIFF_INQUIRY"
+    },
+    {
+      "id": "gdpr_request-02088",
+      "intended": "GDPR_REQUEST",
+      "judged": "PERSONAL_DATA_CHANGE"
+    },
+    {
+      "id": "claim_notification-02836",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "claim_notification-02840",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "claim_notification-02908",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "claim_notification-02976",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "claim_notification-02980",
+      "intended": "CLAIM_NOTIFICATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "contract_termination-03452",
+      "intended": "CONTRACT_TERMINATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "contract_termination-03516",
+      "intended": "CONTRACT_TERMINATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "contract_termination-03584",
+      "intended": "CONTRACT_TERMINATION",
+      "judged": "DEATH_NOTIFICATION"
+    },
+    {
+      "id": "other-04672",
+      "intended": "OTHER",
+      "judged": "PERSONAL_DATA_CHANGE"
+    }
+  ],
+  "train": 3644,
+  "test": 1511,
+  "testVariants": {
+    "injection": 40,
+    "ocrNoise": 40,
+    "identifierSlip": 40
+  },
+  "customers": 400
+}

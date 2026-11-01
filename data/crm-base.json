@@ -1,0 +1,350 @@
+{
+  "customers": [
+    {
+      "id": "C0001",
+      "name": "Agnieszka Kamińska",
+      "pesel": "94090115225",
+      "ibans": ["PL54 1140 2004 4293 9234 3079 8385"],
+      "policies": [
+        {
+          "number": "POL/2026/749165",
+          "product": "MOTOR",
+          "status": "ACTIVE"
+        },
+        {
+          "number": "POL/2026/224785",
+          "product": "LIFE",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0002",
+      "name": "Jan Kozłowski",
+      "pesel": "57091349158",
+      "ibans": ["PL79 1020 1026 0723 1417 1815 6335"],
+      "policies": [
+        {
+          "number": "POL/2026/288689",
+          "product": "PROPERTY",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0003",
+      "name": "Katarzyna Zielińska",
+      "pesel": "56021331061",
+      "ibans": ["PL19 2490 0005 5338 2990 7214 1010"],
+      "policies": [
+        {
+          "number": "POL/2024/027871",
+          "product": "MOTOR",
+          "status": "TERMINATED"
+        },
+        {
+          "number": "POL/2025/290440",
+          "product": "LIFE",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": ["VIP"]
+    },
+    {
+      "id": "C0004",
+      "name": "Piotr Lewandowski",
+      "pesel": "62030747832",
+      "ibans": ["PL72 1140 2004 0844 9041 2778 0682"],
+      "policies": [
+        {
+          "number": "POL/2025/951312",
+          "product": "MOTOR",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0005",
+      "name": "Joanna Nowak",
+      "pesel": "55121937546",
+      "ibans": ["PL63 2490 0005 9245 5009 6746 8321"],
+      "policies": [
+        {
+          "number": "POL/2023/083001",
+          "product": "PROPERTY",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0006",
+      "name": "Marek Wójcik",
+      "pesel": "81121128820",
+      "ibans": ["PL31 2490 0005 8005 4280 7481 7513"],
+      "policies": [
+        {
+          "number": "POL/2024/836143",
+          "product": "PROPERTY",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0007",
+      "name": "Paweł Szymański",
+      "pesel": "94051868098",
+      "ibans": ["PL88 1140 2004 4172 9261 5061 8542"],
+      "policies": [
+        {
+          "number": "POL/2025/672254",
+          "product": "PROPERTY",
+          "status": "TERMINATED"
+        },
+        {
+          "number": "POL/2026/125685",
+          "product": "LIFE",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": ["FRAUD"]
+    },
+    {
+      "id": "C0008",
+      "name": "Marek Wiśniewski",
+      "pesel": "83122502171",
+      "ibans": ["PL50 1050 1445 6934 8855 8331 5438"],
+      "policies": [
+        {
+          "number": "POL/2023/080638",
+          "product": "PROPERTY",
+          "status": "ACTIVE"
+        },
+        {
+          "number": "POL/2025/295075",
+          "product": "LIFE",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0009",
+      "name": "Grzegorz Kozłowski",
+      "pesel": "62030916010",
+      "ibans": ["PL70 1050 1445 8391 1253 7953 1596"],
+      "policies": [
+        {
+          "number": "POL/2026/095369",
+          "product": "MOTOR",
+          "status": "ACTIVE"
+        },
+        {
+          "number": "POL/2024/159965",
+          "product": "LIFE",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0010",
+      "name": "Ewa Kowalska",
+      "pesel": "66030219395",
+      "ibans": ["PL13 1050 1445 5799 0717 7839 6817"],
+      "policies": [
+        {
+          "number": "POL/2024/560844",
+          "product": "PROPERTY",
+          "status": "ACTIVE"
+        },
+        {
+          "number": "POL/2026/332725",
+          "product": "LIFE",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0011",
+      "name": "Katarzyna Wiśniewska",
+      "pesel": "77011268071",
+      "ibans": ["PL25 1140 2004 0697 8044 1871 3999"],
+      "policies": [
+        {
+          "number": "POL/2026/387650",
+          "product": "MOTOR",
+          "status": "TERMINATED"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0012",
+      "name": "Barbara Wójcik",
+      "pesel": "53112527495",
+      "ibans": ["PL80 1050 1445 2033 3677 2974 4629"],
+      "policies": [
+        {
+          "number": "POL/2025/573142",
+          "product": "MOTOR",
+          "status": "ACTIVE"
+        },
+        {
+          "number": "POL/2025/566045",
+          "product": "LIFE",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0013",
+      "name": "Piotr Dąbrowski",
+      "pesel": "62022256638",
+      "ibans": ["PL40 1140 2004 7929 8626 8330 9634"],
+      "policies": [
+        {
+          "number": "POL/2025/623750",
+          "product": "PROPERTY",
+          "status": "TERMINATED"
+        },
+        {
+          "number": "POL/2025/088903",
+          "product": "LIFE",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "id": "C0014",
+      "name": "Anna Nowak",
+      "pesel": "88010581030",
+      "ibans": ["PL15 2490 0005 0363 9475 9112 1472"],
+      "policies": [
+        {
+          "number": "POL/2023/990281",
+          "product": "MOTOR",
+          "status": "ACTIVE"
+        }
+      ],
+      "flags": []
+    }
+  ],
+  "claims": [
+    {
+      "number": "SZK/2025/121665",
+      "customerId": "C0001",
+      "status": "CLOSED",
+      "handler": "p.sikora",
+      "pendingPayout": false
+    },
+    {
+      "number": "SZK/2025/832656",
+      "customerId": "C0002",
+      "status": "OPEN",
+      "handler": "m.baran",
+      "pendingPayout": false
+    },
+    {
+      "number": "SZK/2025/079267",
+      "customerId": "C0003",
+      "status": "CLOSED",
+      "handler": "k.wrobel",
+      "pendingPayout": true
+    },
+    {
+      "number": "SZK/2026/469793",
+      "customerId": "C0004",
+      "status": "OPEN",
+      "handler": "p.sikora",
+      "pendingPayout": true
+    },
+    {
+      "number": "SZK/2026/428925",
+      "customerId": "C0006",
+      "status": "CLOSED",
+      "handler": "p.sikora",
+      "pendingPayout": true
+    },
+    {
+      "number": "SZK/2025/222002",
+      "customerId": "C0009",
+      "status": "OPEN",
+      "handler": "k.wrobel",
+      "pendingPayout": false
+    },
+    {
+      "number": "SZK/2026/494490",
+      "customerId": "C0010",
+      "status": "CLOSED",
+      "handler": "k.wrobel",
+      "pendingPayout": false
+    },
+    {
+      "number": "SZK/2025/880175",
+      "customerId": "C0011",
+      "status": "OPEN",
+      "handler": "a.mazur",
+      "pendingPayout": true
+    },
+    {
+      "number": "SZK/2025/916064",
+      "customerId": "C0012",
+      "status": "OPEN",
+      "handler": "m.baran",
+      "pendingPayout": true
+    },
+    {
+      "number": "SZK/2026/559623",
+      "customerId": "C0013",
+      "status": "OPEN",
+      "handler": "k.wrobel",
+      "pendingPayout": true
+    },
+    {
+      "number": "SZK/2025/989839",
+      "customerId": "C0014",
+      "status": "OPEN",
+      "handler": "a.mazur",
+      "pendingPayout": false
+    }
+  ],
+  "complaints": [
+    {
+      "number": "REK/2026/21215",
+      "customerId": "C0003",
+      "status": "OPEN"
+    },
+    {
+      "number": "REK/2026/07439",
+      "customerId": "C0005",
+      "status": "OPEN"
+    },
+    {
+      "number": "REK/2026/04249",
+      "customerId": "C0014",
+      "status": "OPEN"
+    }
+  ],
+  "courtCases": [
+    {
+      "caseNumber": "II C 2829/25",
+      "owner": "legal.kowalczyk"
+    },
+    {
+      "caseNumber": "I C 218/26",
+      "owner": "legal.zajac"
+    },
+    {
+      "caseNumber": "II C 631/25",
+      "owner": "legal.zajac"
+    }
+  ]
+}
