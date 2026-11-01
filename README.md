@@ -1,8 +1,8 @@
 # doc-router
 
-A preliminary proof of concept for the incoming-mail case study. A Polish financial company receives hundreds of letters a day from bailiffs, courts, customers, regulators and suppliers. Each one has to be classified, matched to a customer and routed to the right team before its statutory deadline runs out (7 days for a seizure, 30 for a complaint).
+Incoming letters have to be classified, matched to a customer and routed to the right team before a statutory deadline runs out (7 days for a seizure, 30 for a complaint). This proof of concept handles Polish-language letters in an insurance setting (bailiffs, courts, customers, regulators and suppliers, hundreds a day) and checks whether this can be automated safely and what it costs.
 
-The goal of the PoC is to check whether this can be automated safely and what it costs. It is not production software:
+It is not production software:
 
 - All numbers come from a synthetic corpus (about 5000 letters written by LLMs, plus 128 rendered scans). That is enough to compare designs, not to promise accuracy on real mail.
 - Core systems are a JSON fixture, and the operator console has no login.
