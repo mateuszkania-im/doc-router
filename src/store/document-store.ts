@@ -4,6 +4,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { z } from 'zod';
 import { DocumentClassSchema, type DocumentClass } from '../domain/classes.js';
 import { ChannelSchema, type ProcessedDocument } from '../domain/types.js';
+import { deadlineFor, priorityFor } from '../routing/route.js';
 
 const SCHEMA = `
 CREATE TABLE IF NOT EXISTS documents (
@@ -183,20 +184,32 @@ export class DocumentStore {
       .parse(rows);
   }
 
-  /** A human correction closes the review and becomes a training label for the next model. */
+  /**
+   * A human correction closes the review and becomes a training label for the next model. The
+   * deadline and priority follow the corrected label, counted from receipt like at classification.
+   */
   review(id: string, input: ReviewInput): boolean {
     const now = new Date().toISOString();
     this.db.exec('BEGIN');
     try {
-      const updated = this.db
-        .prepare(
-          `UPDATE documents SET label = ?, queue = ?, status = 'REVIEWED', decided_by = 'human' WHERE id = ?`,
-        )
-        .run(input.correctLabel, input.correctQueue, id);
-      if (updated.changes === 0) {
+      const row = this.db.prepare('SELECT received_at FROM documents WHERE id = ?').get(id);
+      if (!row) {
         this.db.exec('ROLLBACK');
         return false;
       }
+      const receivedAt = new Date(z.object({ received_at: z.string() }).parse(row).received_at);
+      const deadline = deadlineFor(input.correctLabel, receivedAt);
+      this.db
+        .prepare(
+          `UPDATE documents SET label = ?, queue = ?, priority = ?, deadline = ?, status = 'REVIEWED', decided_by = 'human' WHERE id = ?`,
+        )
+        .run(
+          input.correctLabel,
+          input.correctQueue,
+          priorityFor(input.correctLabel),
+          deadline?.toISOString() ?? null,
+          id,
+        );
       this.db
         .prepare(
           'INSERT INTO reviews (document_id, reviewer, correct_label, correct_queue, customer_id, note, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)',

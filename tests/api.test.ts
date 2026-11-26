@@ -153,6 +153,52 @@ describe('HTTP API', () => {
     ]);
   });
 
+  it('recomputes deadline and priority when a reviewer corrects the label', async () => {
+    // Received five days earlier, so its 30-day deadline is ahead of the misread letter's until
+    // the correction.
+    const complaint = (await (
+      await ctx.app.request('/documents', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-integration-token': 'secret-token' },
+        body: JSON.stringify({
+          text: LETTERS.complaint,
+          receivedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+        }),
+      })
+    ).json()) as DocBody;
+    const misread = (await (
+      await ctx.post({
+        text: 'Dzień dobry, mam pytanie o ofertę, proszę o kontakt telefoniczny w wolnej chwili.',
+      })
+    ).json()) as DocBody;
+    expect(Date.parse(misread.document.deadline ?? '')).toBeGreaterThan(
+      Date.parse(complaint.document.deadline ?? ''),
+    );
+
+    const review = (id: string, correctLabel: string, correctQueue: string) =>
+      ctx.app.request(`/documents/${id}/review`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ reviewer: 'mateusz', correctLabel, correctQueue }),
+      });
+
+    const res = await review(misread.document.id, 'BAILIFF_SEIZURE', 'enforcement');
+    const corrected = (await res.json()) as DocBody['document'] & { priority: string };
+    expect(corrected).toMatchObject({ label: 'BAILIFF_SEIZURE', priority: 'P1' });
+    expect(Date.parse(corrected.deadline ?? '') - Date.parse(corrected.receivedAt)).toBe(
+      7 * 24 * 60 * 60 * 1000,
+    );
+
+    const list = (await (await ctx.app.request('/documents')).json()) as { id: string }[];
+    expect(list.map((d) => d.id).slice(0, 2)).toEqual([misread.document.id, complaint.document.id]);
+
+    // The other direction: a correction to a class without a deadline clears it.
+    const down = (await (
+      await review(misread.document.id, 'INVOICE', 'accounts-payable')
+    ).json()) as DocBody['document'] & { priority: string };
+    expect(down).toMatchObject({ priority: 'P3', deadline: null });
+  });
+
   it('adds the customer column to a database created before it existed', async () => {
     const path = join(await mkdtemp(join(tmpdir(), 'store-')), 'old.sqlite');
     const old = new DatabaseSync(path);

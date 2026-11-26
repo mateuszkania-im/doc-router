@@ -37,6 +37,11 @@ export function deadlineFor(label: DocumentClass, receivedAt: Date): Date | unde
   return days === undefined ? undefined : new Date(receivedAt.getTime() + days * DAY_MS);
 }
 
+/** Priority of a document whose label is settled: by a confident classifier or by a reviewer. */
+export function priorityFor(label: DocumentClass | null): Priority {
+  return label && isCritical(label) ? 'P1' : label === 'INVOICE' ? 'P3' : 'P2';
+}
+
 function earliest(dates: readonly (Date | undefined)[]): Date | undefined {
   const defined = dates.filter((d): d is Date => d !== undefined);
   return defined.length ? new Date(Math.min(...defined.map((d) => d.getTime()))) : undefined;
@@ -269,7 +274,7 @@ export function route(
   } else {
     const target = proposed ?? targetFor('OTHER', extraction, enrichment);
     queue = target.queue;
-    priority = label && isCritical(label) ? 'P1' : label === 'INVOICE' ? 'P3' : 'P2';
+    priority = priorityFor(label);
     reasons.push(
       `${label ?? 'OTHER'} decided by ${classification.decidedBy ?? 'nobody'}`,
       ...target.reasons,
